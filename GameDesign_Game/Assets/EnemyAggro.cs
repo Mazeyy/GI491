@@ -7,7 +7,7 @@ public class EnemyAggro : MonoBehaviour
 
     public float movementSpeed = 1.0f;
     public float movement_base_speed = 1.0f;
-    public float Range = 5F;   
+    public float Range = 5F;
 
     [Space]
     [Header("Statistics :")]    
@@ -43,5 +43,4 @@ public class EnemyAggro : MonoBehaviour
             Animator.SetFloat("Vertical", movementDirection.y);
         }        
     }    
-
 }
