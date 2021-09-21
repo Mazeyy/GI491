@@ -176,7 +176,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 2
+  serializedVersion: 3
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -215,7 +215,7 @@ LightingSettings:
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
-  m_PVRRussianRouletteStartBounce: 2
+  m_PVRMinBounces: 1
   m_PVREnvironmentMIS: 0
   m_PVRFilteringMode: 2
   m_PVRDenoiserTypeDirect: 0
@@ -1754,6 +1754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 2677795858445444920, guid: 8c460d436bc2ea548b4cd47b4fae6053, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c460d436bc2ea548b4cd47b4fae6053, type: 3}
 --- !u!1 &1675259561
@@ -2423,6 +2427,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 610477319691325563, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -994525057455845182, guid: f2a99d06862c0cd4cbd2622b4df652a7, type: 3}
     - target: {fileID: 610477319713957349, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
       propertyPath: DashSPD
       value: 2
