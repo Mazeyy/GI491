@@ -160,7 +160,7 @@ public class Player_Controller : MonoBehaviour
             bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BulletSpd;
             bullet.GetComponent<bullet>().damage = Random.Range(minDamage, maxDamage);
             bullet.transform.Rotate(0, 0, Mathf.Atan2(shootingDirection.y, shootingDirection.x) * Mathf.Rad2Deg);
-            Destroy(bullet, 5.0f);
+            Destroy(bullet, 3.0f);
         }
         
     }

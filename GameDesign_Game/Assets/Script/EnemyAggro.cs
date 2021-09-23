@@ -19,20 +19,37 @@ public class EnemyAggro : MonoBehaviour
     public Animator Animator;
     public Transform Player;
     private Coroutine slimeUpdate;
-   
+    private Transform PlayerPos;
+    //private void Start()
+    //{
+    //    SlimeWalk();
+    //}
+
+    private void Awake()
+    {
+        PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     void Update()
     {
         Animate();
         SlimeWalk();
+        Slime_Movement_type();
     }    
+
+    void Slime_Movement_type()
+    {
+
+    }
 
     void SlimeWalk()
     {
-        if (Vector3.Distance(transform.position, Player.position) <= Range)
+        if (Vector2.Distance(transform.position, PlayerPos.position) <= Range)
         {
-            movementDirection = (Player.transform.position - transform.position).normalized;
-            transform.position = Vector3.MoveTowards(transform.position, Player.position, movementSpeed * Time.deltaTime);            
-        }        
+            movementDirection = (PlayerPos.transform.position - transform.position).normalized;
+            transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);            
+        }       
+        
     }
 
     void Animate()

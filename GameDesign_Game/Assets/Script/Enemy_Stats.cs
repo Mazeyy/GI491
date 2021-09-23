@@ -9,8 +9,9 @@ public class Enemy_Stats : MonoBehaviour
     public float MaxHealt = 1.0f;
     public float Health = 1.0f;
     public float AttackDMG = 1.0f;
-
+    public bool Heart_drop;
     public GameObject HeartPrefab;
+    public GameObject Player;
     //public float health;
 
     private void Start()
@@ -24,11 +25,11 @@ public class Enemy_Stats : MonoBehaviour
         CheckDeath();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            print("DAMAGE");
+            print("Touch Damage");
         }
     }
 
@@ -43,11 +44,14 @@ public class Enemy_Stats : MonoBehaviour
 
     void ItemDrop()
     {
-        Vector3 position = transform.position;
-        GameObject Heart = Instantiate(HeartPrefab, position , Quaternion.identity);
-        //GameObject Heart = Instantiate(HeartPrefab);
-        //Heart.SetActive(true);
-        Destroy(Heart, 5.0f);  
-        
+        //Random.Range(1, 10);
+        if (Heart_drop == true /*&& */)
+        {            
+            Vector3 position = transform.position;
+            GameObject Heart = Instantiate(HeartPrefab, position , Quaternion.identity);
+            //GameObject Heart = Instantiate(HeartPrefab);
+            //Heart.SetActive(true);
+            Destroy(Heart, 5.0f);          
+        }        
     }
 }
