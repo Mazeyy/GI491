@@ -22,6 +22,7 @@ public class Enemy_Stats : MonoBehaviour
     public void DealDMG(float damage)
     {
         Health -= damage;
+        print("Damage Taken");
         CheckDeath();
     }
 

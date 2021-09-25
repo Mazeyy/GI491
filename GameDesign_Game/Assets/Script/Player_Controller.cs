@@ -6,32 +6,23 @@ public class Player_Controller : MonoBehaviour
 {
     [Space]
     [Header("CharacterAttributes:")]
-    private float movementBaseSpeed = 1.0f;    
-    //private float aimingBasePenalty = 0.50f;    
+    private float movementBaseSpeed = 1.0f;       
 
     [Space]
     [Header("CharacterStatistics:")]
-    Vector2 shootingDirection;
-    Vector2 movementDirection;
+    Vector2 CombatDirection;
+    Vector2 movementDirection;    
     private float movementSpeed;
 
     [Space]
     [Header("References:")]
     public Rigidbody2D rb;
     public Animator Animator;
-    public GameObject CrossHair;    
-    private bool endOfAiming;
-    private bool isAiming;
+    public GameObject CrossHair;
     public bool rangeCombat;
-    //public bool meleeCombat;
-    public LayerMask enemyLayer;
-
-    [Space]
-    [Header("Bullet")]
-    public GameObject BulletPrefab;
-    public float BulletSpd;
-    public float minDamage;
-    public float maxDamage;
+    private bool Melee_Attack; 
+    private bool Range_Attack;
+    public GameObject ArrowCircle;
 
     [Space]
     [Header("Dash")]
@@ -40,10 +31,21 @@ public class Player_Controller : MonoBehaviour
     public float timeBTWdash;
     public float Dashtime;
 
-    //[Space]
-    //[Header("Melee")]
-    //public float attackRange = 0.5f;
-    //public Transform Attackpoint; 
+    [Space]
+    [Header("Melee")]
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
+    public Transform Attackpoint;
+    public LayerMask whatIsEnemies;
+    public float attackRange = 0.5f;
+    public int damage = 10;
+
+    [Space]
+    [Header("Bullet")]
+    public GameObject BulletPrefab;
+    public float BulletSpd;
+    public float minDamage;
+    public float maxDamage;
 
     void Awake()
     {
@@ -58,25 +60,19 @@ public class Player_Controller : MonoBehaviour
         Animate();
         Shoot();
         //Aim();
-        //Attack();
+        Attack();
     }
 
     private void ProcessInputs()
-    {
+    {                
         {
             movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
-            movementDirection.Normalize();
-
-            //isAiming = Input.GetButton("Fire1");
-            endOfAiming = Input.GetButtonDown("Fire1");
+            movementDirection.Normalize();            
                         
         }
-
-        //if (isAiming/* || Shootingrecoil > 0.0f*/ || rangeCombat == true/* || meleeCombat == false*/)
-        //{
-        //    movementSpeed *= aimingBasePenalty;
-        //}
+        
+        Range_Attack = Input.GetButtonDown("Fire2");        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -85,8 +81,8 @@ public class Player_Controller : MonoBehaviour
     }
 
     private void Move()
-    {
-        rb.velocity = movementDirection * movementSpeed * movementBaseSpeed;
+    {        
+        rb.velocity = movementDirection * movementSpeed * movementBaseSpeed;               
     }
 
     private void Animate()
@@ -95,9 +91,9 @@ public class Player_Controller : MonoBehaviour
         {
             Animator.SetFloat("Horizontal", movementDirection.x);
             Animator.SetFloat("Vertical", movementDirection.y);
-        }
+        }       
 
-        Animator.SetFloat("Speed", movementSpeed);
+        Animator.SetFloat("Speed", movementSpeed);       
     }
 
     void Dashing()
@@ -106,8 +102,7 @@ public class Player_Controller : MonoBehaviour
         {
             StartCoroutine(Dash());  
         }              
-    }
-
+    }   
     IEnumerator Dash()
     {
         candash = false;
@@ -118,29 +113,40 @@ public class Player_Controller : MonoBehaviour
         candash = true;
     }
 
-    //void Attack()
-    //{
-    //    if (endOfAiming /*&& meleeCombat == true*/)
-    //    {
-    //        Animator.SetTrigger("Attack");
+    void Attack()
+    {
+       
+        if (timeBtwAttack <= 0)
+        {            
+            if (Input.GetButton("Fire1"))
+            {
+                //Animator.SetFloat("Hori_Slash", shootingDirection.x);     //MoveTo Shoot 
+                //Animator.SetFloat("Vert_Slash", shootingDirection.y);
 
-    //        Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, enemyLayer);
+                Animator.SetTrigger("Attack");
+                Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
 
-    //        foreach (Collider2D enemy in hitenemies)
-    //        {
-    //            Debug.Log("HIT" + enemy.name);
-    //        }
-    //    }
-    //}
-    //void OnDrawGizmosSelected()
-    //{
-    //    if(Attackpoint == null)
-    //    {
-    //        return;
-    //    }
-
-    //    Gizmos.DrawWireSphere(Attackpoint.position, attackRange);
-    //}
+                for (int i = 0; i < hitenemies.Length; i++)
+                {
+                    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);
+                }
+                timeBtwAttack = startTimeBtwAttack;
+            }            
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
+    }
+    void OnDrawGizmosSelected()
+    {
+        if (Attackpoint == null)
+        {
+            return;
+        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(Attackpoint.position, attackRange);
+    }
 
 
 
@@ -149,17 +155,18 @@ public class Player_Controller : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 playerpos = transform.position;
         CrossHair.transform.localPosition = mousePosition;
+        CombatDirection = mousePosition - playerpos;
+        CombatDirection.Normalize();
+        Animator.SetFloat("Hori_Slash", CombatDirection.x);
+        Animator.SetFloat("Vert_Slash", CombatDirection.y);
 
-        shootingDirection = mousePosition - playerpos;
-        shootingDirection.Normalize();
-
-        if (endOfAiming && rangeCombat == true)
+        if (Range_Attack && rangeCombat == true)
         {
             GameObject bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
 
-            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BulletSpd;
+            bullet.GetComponent<Rigidbody2D>().velocity = CombatDirection * BulletSpd;
             bullet.GetComponent<bullet>().damage = Random.Range(minDamage, maxDamage);
-            bullet.transform.Rotate(0, 0, Mathf.Atan2(shootingDirection.y, shootingDirection.x) * Mathf.Rad2Deg);
+            bullet.transform.Rotate(0, 0, Mathf.Atan2(CombatDirection.y, CombatDirection.x) * Mathf.Rad2Deg);
             Destroy(bullet, 3.0f);
         }
         

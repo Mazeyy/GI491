@@ -6,7 +6,7 @@ public class Rotation_cross : MonoBehaviour
 {
     public GameObject Player;      
 
-    private void FixedUpdate()
+    private void Update()
     {        
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         mousePosition.Normalize();        

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5805205265503587644}
   - component: {fileID: 5805205265503587645}
   - component: {fileID: 5805205265503587642}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   Range: 3
   rb: {fileID: 5805205265503587647}
   Animator: {fileID: 5805205265503587646}
-  Player: {fileID: 610477319713957350, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
+  Player: {fileID: 8684607386917833429, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
 --- !u!50 &5805205265503587647
 Rigidbody2D:
   serializedVersion: 4
@@ -215,7 +215,7 @@ MonoBehaviour:
   AttackDMG: 5
   Heart_drop: 1
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
-  Player: {fileID: 610477319713957354, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
+  Player: {fileID: 8684607386917833433, guid: 47c53567d81d01a4a9ae1ce5a3d27781, type: 3}
 --- !u!1 &5805205265725984663
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5805205265725984660}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Enemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
