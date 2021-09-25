@@ -103,24 +103,10 @@ public class Player_Controller : MonoBehaviour
     {
         if (candash == true)
         {
-            StartCoroutine(Dash());  
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = Vector2.MoveTowards(transform.position, mousePosition, 100f * Time.deltaTime);
         }              
-    }   
-    IEnumerator Dash()
-    {
-        candash = false;
-        movementBaseSpeed = DashSPD;
-        yield return new WaitForSeconds(Dashtime);
-        movementBaseSpeed = 1;
-        yield return new WaitForSeconds(timeBTWdash);
-        candash = true;
-    }
-    //IEnumerator Attacking()
-    //{
-    //    movementBaseSpeed = 0;
-    //    yield return new WaitForSeconds(0.3f);
-    //    movementBaseSpeed = 1;
-    //}
+    }       
 
     void Attack()
     {
@@ -128,11 +114,8 @@ public class Player_Controller : MonoBehaviour
         if (timeBtwAttack <= 0)
         {            
             if (Input.GetButton("Fire1"))
-            {
-                //Animator.SetFloat("Hori_Slash", shootingDirection.x);     //MoveTo Shoot 
-                //Animator.SetFloat("Vert_Slash", shootingDirection.y);
-                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = Vector2.MoveTowards(transform.position, mousePosition, 100f * Time.deltaTime);
+            {                
+                
                 Animator.SetTrigger("Attack");
                 Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
 

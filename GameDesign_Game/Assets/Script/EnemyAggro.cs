@@ -8,7 +8,7 @@ public class EnemyAggro : MonoBehaviour
     public float movementSpeed = 1.0f;
     public float movement_base_speed = 1.0f;
     public float Range = 5F;
-
+    
     [Space]
     [Header("Statistics :")]    
     private Vector2 movementDirection;  
@@ -17,8 +17,7 @@ public class EnemyAggro : MonoBehaviour
     [Header("References:")]
     public Rigidbody2D rb;
     public Animator Animator;
-    public Transform Player;
-    private Coroutine slimeUpdate;
+    public Transform Player;    
     private Transform PlayerPos;
     //private void Start()
     //{
@@ -27,6 +26,7 @@ public class EnemyAggro : MonoBehaviour
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -44,14 +44,14 @@ public class EnemyAggro : MonoBehaviour
 
     void SlimeWalk()
     {
-        if (Vector2.Distance(transform.position, PlayerPos.position) <= Range)
+        if (Vector2.Distance(transform.position, PlayerPos.position) <= Range )
         {
+            
             movementDirection = (PlayerPos.transform.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);            
-        }       
-        
+        }               
     }
-
+    
     void Animate()
     {
         if (movementDirection != Vector2.zero)

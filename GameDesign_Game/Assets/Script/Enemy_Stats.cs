@@ -16,6 +16,7 @@ public class Enemy_Stats : MonoBehaviour
 
     private void Start()
     {
+        
         Health = MaxHealt;
     }
 
