@@ -12,15 +12,14 @@ public class Player_Controller : MonoBehaviour
     [Header("CharacterStatistics:")]
     Vector2 CombatDirection;
     Vector2 movementDirection;    
-    private float movementSpeed;
+    private float movementSpeed;        
 
     [Space]
     [Header("References:")]
     public Rigidbody2D rb;
     public Animator Animator;
     public GameObject CrossHair;
-    public bool rangeCombat;
-    private bool Melee_Attack; 
+    public bool rangeCombat;    
     private bool Range_Attack;
     public GameObject ArrowCircle;
 
@@ -52,9 +51,13 @@ public class Player_Controller : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
     }
-
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     public void Update()
     {
+
         ProcessInputs();
         Move();
         Animate();
@@ -112,6 +115,12 @@ public class Player_Controller : MonoBehaviour
         yield return new WaitForSeconds(timeBTWdash);
         candash = true;
     }
+    //IEnumerator Attacking()
+    //{
+    //    movementBaseSpeed = 0;
+    //    yield return new WaitForSeconds(0.3f);
+    //    movementBaseSpeed = 1;
+    //}
 
     void Attack()
     {
@@ -122,7 +131,8 @@ public class Player_Controller : MonoBehaviour
             {
                 //Animator.SetFloat("Hori_Slash", shootingDirection.x);     //MoveTo Shoot 
                 //Animator.SetFloat("Vert_Slash", shootingDirection.y);
-
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = Vector2.MoveTowards(transform.position, mousePosition, 100f * Time.deltaTime);
                 Animator.SetTrigger("Attack");
                 Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
 
@@ -131,6 +141,7 @@ public class Player_Controller : MonoBehaviour
                     hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);
                 }
                 timeBtwAttack = startTimeBtwAttack;
+                //StartCoroutine(Attacking());
             }            
         }
         else
@@ -150,7 +161,7 @@ public class Player_Controller : MonoBehaviour
 
 
 
-    void Shoot()
+    public void Shoot()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 playerpos = transform.position;
