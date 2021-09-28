@@ -33,7 +33,7 @@ public class EnemyAggro : MonoBehaviour
     void Update()
     {
         Animate();
-        SlimeWalk();
+        FollowPlayer();
         Slime_Movement_type();
     }    
 
@@ -42,11 +42,10 @@ public class EnemyAggro : MonoBehaviour
 
     }
 
-    void SlimeWalk()
+    void FollowPlayer()
     {
         if (Vector2.Distance(transform.position, PlayerPos.position) <= Range )
-        {
-            
+        {            
             movementDirection = (PlayerPos.transform.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);            
         }               

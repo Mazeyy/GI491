@@ -6,13 +6,14 @@ public class Player_Controller : MonoBehaviour
 {
     [Space]
     [Header("CharacterAttributes:")]
-    private float movementBaseSpeed = 1.0f;       
+    private float movementBaseSpeed = 1.0f;
+    public static Player_Controller instance;
 
     [Space]
     [Header("CharacterStatistics:")]
     Vector2 CombatDirection;
     Vector2 movementDirection;    
-    private float movementSpeed;        
+    public float movementSpeed;        
 
     [Space]
     [Header("References:")]
@@ -25,10 +26,10 @@ public class Player_Controller : MonoBehaviour
 
     [Space]
     [Header("Dash")]
-    private bool candash = true;
-    public float DashSPD;
-    public float timeBTWdash;
+    private float DashSpeed = 3f;
+    public bool IsDashing;
     public float Dashtime;
+    public float timeBTWdash;
 
     [Space]
     [Header("Melee")]
@@ -44,10 +45,11 @@ public class Player_Controller : MonoBehaviour
     public GameObject BulletPrefab;
     public float BulletSpd;
     public float minDamage;
-    public float maxDamage;
+    public float maxDamage;        
 
     void Awake()
     {
+        instance = this;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
     }
@@ -56,8 +58,7 @@ public class Player_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
     public void Update()
-    {
-
+    {        
         ProcessInputs();
         Move();
         Animate();
@@ -73,13 +74,12 @@ public class Player_Controller : MonoBehaviour
             movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
             movementDirection.Normalize();            
                         
-        }
-        
+        }        
         Range_Attack = Input.GetButtonDown("Fire2");        
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
         {
-            Dashing();
+            StartCoroutine(Dashing());
         }
     }
 
@@ -97,34 +97,40 @@ public class Player_Controller : MonoBehaviour
         }       
 
         Animator.SetFloat("Speed", movementSpeed);       
+    } 
+    private IEnumerator Dashing()
+    {              
+        IsDashing = true;
+        movementBaseSpeed = movementBaseSpeed * movementSpeed * DashSpeed;
+        yield return new WaitForSeconds(Dashtime);
+        movementBaseSpeed = 1;
+        yield return new WaitForSeconds(timeBTWdash);
+        IsDashing = false;
     }
 
-    void Dashing()
-    {
-        if (candash == true)
-        {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = Vector2.MoveTowards(transform.position, mousePosition, 100f * Time.deltaTime);
-        }              
-    }       
-
     void Attack()
-    {
-       
+    {       
         if (timeBtwAttack <= 0)
         {            
             if (Input.GetButton("Fire1"))
-            {                
-                
+            {
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 playerpos = transform.position;
+                CrossHair.transform.localPosition = mousePosition;
+                CombatDirection = mousePosition - playerpos;
+                Vector3 CombatDash = CombatDirection;
+                CombatDirection.Normalize();
+                float DashCombat = 0.12f;
+                transform.position += CombatDash * DashCombat;
                 Animator.SetTrigger("Attack");
                 Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
-
+                
                 for (int i = 0; i < hitenemies.Length; i++)
                 {
                     hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);
                 }
                 timeBtwAttack = startTimeBtwAttack;
-                //StartCoroutine(Attacking());
+                StartCoroutine(Attacking());
             }            
         }
         else
@@ -132,6 +138,26 @@ public class Player_Controller : MonoBehaviour
             timeBtwAttack -= Time.deltaTime;
         }
     }
+
+    private IEnumerator Attacking()
+    {
+        movementBaseSpeed = 0;
+        yield return new WaitForSeconds(0.2f);
+        movementBaseSpeed = 1;        
+    }
+
+    public IEnumerator Knockback(float knockbackDuration , float knockbackPower, Transform obj)
+    {
+        float timer = 0;
+        while(knockbackDuration > timer)
+        {
+            timer += Time.deltaTime;
+            Vector2 direction = (obj.transform.position - this.transform.position).normalized;
+            rb.AddForce(-direction * knockbackPower);
+        }
+        yield return 0;
+    }
+
     void OnDrawGizmosSelected()
     {
         if (Attackpoint == null)

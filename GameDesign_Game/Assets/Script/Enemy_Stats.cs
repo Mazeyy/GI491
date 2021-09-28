@@ -14,6 +14,9 @@ public class Enemy_Stats : MonoBehaviour
     public GameObject Player;
     //public float health;
 
+    public float knockbackPower = 0.002f;
+    public float knockbackDuration = 0.7f;
+
     private void Start()
     {
         
@@ -31,7 +34,7 @@ public class Enemy_Stats : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            print("Touch Damage");
+            StartCoroutine(Player_Controller.instance.Knockback(knockbackDuration, knockbackPower, this.transform));            
         }
     }
 
