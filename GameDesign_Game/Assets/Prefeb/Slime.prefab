@@ -188,6 +188,7 @@ MonoBehaviour:
   AttackDMG: 5
   Heart_drop: 1
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
+  PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
   Player: {fileID: 3667916003226391859, guid: 2879d031b32bd3a44adabebe90efd025, type: 3}
   rb: {fileID: 1993388955390538808}
   knockbackPower: 0.001

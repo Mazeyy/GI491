@@ -1217,6 +1217,7 @@ MonoBehaviour:
   AttackDMG: 20
   Heart_drop: 0
   HeartPrefab: {fileID: 0}
+  PotionPrefab: {fileID: 0}
   Player: {fileID: 0}
   rb: {fileID: 0}
   knockbackPower: 0.002
@@ -1426,5 +1427,9 @@ PrefabInstance:
       propertyPath: Weapon
       value: 
       objectReference: {fileID: 2032348465}
+    - target: {fileID: 1993388955390538813, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
+      propertyPath: PotionPrefab
+      value: 
+      objectReference: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}

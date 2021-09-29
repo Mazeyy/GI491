@@ -12,6 +12,7 @@ public class Enemy_Stats : MonoBehaviour
     public float AttackDMG = 1.0f;
     public bool Heart_drop;
     public GameObject HeartPrefab;
+    public GameObject PotionPrefab;
     public GameObject Player;    
     public Rigidbody2D rb;
     //public float health;
@@ -20,6 +21,8 @@ public class Enemy_Stats : MonoBehaviour
     public float knockbackDuration = 0.7f;
 
     private Animator anim;
+
+    private int randDrop;
 
     private void Start()
     {
@@ -30,6 +33,7 @@ public class Enemy_Stats : MonoBehaviour
     }
 
     private void Update()
+    //ถ้า mon เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
     {
         if (Health <= 499)
         {
@@ -63,14 +67,22 @@ public class Enemy_Stats : MonoBehaviour
 
     void ItemDrop()
     {
-        //Random.Range(1, 10);
-        if (Heart_drop == true /*&& */)
-        {            
-            Vector3 position = transform.position;
-            GameObject Heart = Instantiate(HeartPrefab, position , Quaternion.identity);
+        randDrop = Random.Range(1, 10);
+        if (randDrop == 1)
+        {
+            Vector2 position = transform.position;
+            GameObject Heart = Instantiate(HeartPrefab, position, Quaternion.identity);
             //GameObject Heart = Instantiate(HeartPrefab);
             //Heart.SetActive(true);
-            Destroy(Heart, 5.0f);          
-        }        
+            Destroy(Heart, 5.0f);
+        }
+
+        if (randDrop == 2)
+        {
+            Vector2 position = transform.position;
+            GameObject Potion = Instantiate(PotionPrefab, position, Quaternion.identity);
+            Destroy(Potion, 5.0f);
+        }
+        
     }
 }
