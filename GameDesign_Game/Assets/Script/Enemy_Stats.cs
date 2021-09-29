@@ -11,7 +11,8 @@ public class Enemy_Stats : MonoBehaviour
     public float AttackDMG = 1.0f;
     public bool Heart_drop;
     public GameObject HeartPrefab;
-    public GameObject Player;
+    public GameObject Player;    
+    public Rigidbody2D rb;
     //public float health;
 
     public float knockbackPower = 0.002f;
@@ -19,23 +20,23 @@ public class Enemy_Stats : MonoBehaviour
 
     private void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
         Health = MaxHealt;
     }
 
     public void DealDMG(float damage)
     {
         Health -= damage;
-        print("Damage Taken");
+        print("Damage Taken");        
         CheckDeath();
-    }
+    }    
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine(Player_Controller.instance.Knockback(knockbackDuration, knockbackPower, this.transform));            
-        }
+        }        
     }
 
     void CheckDeath()

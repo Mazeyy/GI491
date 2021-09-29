@@ -8,6 +8,7 @@ public class Player_Controller : MonoBehaviour
     [Header("CharacterAttributes:")]
     private float movementBaseSpeed = 1.0f;
     public static Player_Controller instance;
+    private bool CanMove = true;
 
     [Space]
     [Header("CharacterStatistics:")]
@@ -38,7 +39,7 @@ public class Player_Controller : MonoBehaviour
     public Transform Attackpoint;
     public LayerMask whatIsEnemies;
     public float attackRange = 0.5f;
-    public int damage = 10;
+    public int damage = 10;    
 
     [Space]
     [Header("Bullet")]
@@ -68,13 +69,15 @@ public class Player_Controller : MonoBehaviour
     }
 
     private void ProcessInputs()
-    {                
+    {
+        if (CanMove == true)
         {
             movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
-            movementDirection.Normalize();            
+            movementDirection.Normalize();          
                         
         }        
+
         Range_Attack = Input.GetButtonDown("Fire2");        
 
         if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
@@ -85,7 +88,9 @@ public class Player_Controller : MonoBehaviour
 
     private void Move()
     {        
-        rb.velocity = movementDirection * movementSpeed * movementBaseSpeed;               
+        
+        rb.velocity = movementDirection * movementSpeed * movementBaseSpeed;
+                            
     }
 
     private void Animate()
@@ -99,7 +104,7 @@ public class Player_Controller : MonoBehaviour
         Animator.SetFloat("Speed", movementSpeed);       
     } 
     private IEnumerator Dashing()
-    {              
+    {                      
         IsDashing = true;
         movementBaseSpeed = movementBaseSpeed * movementSpeed * DashSpeed;
         yield return new WaitForSeconds(Dashtime);
@@ -122,12 +127,14 @@ public class Player_Controller : MonoBehaviour
                 CombatDirection.Normalize();
                 float DashCombat = 0.12f;
                 transform.position += CombatDash * DashCombat;
+
                 Animator.SetTrigger("Attack");
+
                 Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
                 
                 for (int i = 0; i < hitenemies.Length; i++)
                 {
-                    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);
+                    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);                    
                 }
                 timeBtwAttack = startTimeBtwAttack;
                 StartCoroutine(Attacking());
@@ -141,9 +148,11 @@ public class Player_Controller : MonoBehaviour
 
     private IEnumerator Attacking()
     {
-        movementBaseSpeed = 0;
+        Animator.SetFloat("Hori_Slash", CombatDirection.x);
+        Animator.SetFloat("Vert_Slash", CombatDirection.y);
+        CanMove = false;
         yield return new WaitForSeconds(0.2f);
-        movementBaseSpeed = 1;        
+        CanMove = true;        
     }
 
     public IEnumerator Knockback(float knockbackDuration , float knockbackPower, Transform obj)
@@ -177,8 +186,6 @@ public class Player_Controller : MonoBehaviour
         CrossHair.transform.localPosition = mousePosition;
         CombatDirection = mousePosition - playerpos;
         CombatDirection.Normalize();
-        Animator.SetFloat("Hori_Slash", CombatDirection.x);
-        Animator.SetFloat("Vert_Slash", CombatDirection.y);
 
         if (Range_Attack && rangeCombat == true)
         {
