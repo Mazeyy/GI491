@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_Stats : MonoBehaviour
 {
@@ -18,10 +19,22 @@ public class Enemy_Stats : MonoBehaviour
     public float knockbackPower = 0.002f;
     public float knockbackDuration = 0.7f;
 
+    private Animator anim;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Health = MaxHealt;
+
+        anim = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (Health <= 499)
+        {
+            anim.SetTrigger("StateTwo");
+        }
     }
 
     public void DealDMG(float damage)

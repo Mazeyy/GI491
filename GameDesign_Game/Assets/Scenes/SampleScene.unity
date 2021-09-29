@@ -176,7 +176,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 3
+  serializedVersion: 2
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -215,7 +215,7 @@ LightingSettings:
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
-  m_PVRMinBounces: 1
+  m_PVRRussianRouletteStartBounce: 2
   m_PVREnvironmentMIS: 0
   m_PVRFilteringMode: 2
   m_PVRDenoiserTypeDirect: 0
@@ -1058,10 +1058,10 @@ GameObject:
   - component: {fileID: 2044565199}
   - component: {fileID: 2044565198}
   - component: {fileID: 2044565197}
-  - component: {fileID: 2044565195}
   - component: {fileID: 2044565201}
   - component: {fileID: 2044565200}
   - component: {fileID: 2044565196}
+  - component: {fileID: 2044565195}
   m_Layer: 0
   m_Name: Boss_Ent-Sheet_0
   m_TagString: Enemy
@@ -1417,6 +1417,10 @@ PrefabInstance:
     - target: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538813, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: Weapon
