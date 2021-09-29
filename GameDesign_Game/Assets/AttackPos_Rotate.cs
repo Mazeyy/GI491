@@ -10,12 +10,16 @@ public class AttackPos_Rotate : MonoBehaviour
     public GameObject Player;
     void Update()
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 playerpos = Player.transform.position;
-        //CrossHair.transform.localPosition = mousePosition;
-        CombatDirection = mousePosition - playerpos;
-        CombatDirection.Normalize();
-        Animator.SetFloat("Hori_Slash", CombatDirection.x);
-        Animator.SetFloat("Vert_Slash", CombatDirection.y);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 playerpos = Player.transform.position;
+            //CrossHair.transform.localPosition = mousePosition;
+            CombatDirection = mousePosition - playerpos;
+            CombatDirection.Normalize();
+            Animator.SetFloat("Hori_Slash", CombatDirection.x);
+            Animator.SetFloat("Vert_Slash", CombatDirection.y);
+        }
+        
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1993388955390538810}
   - component: {fileID: 1993388955390538813}
   m_Layer: 3
-  m_Name: Slime 1
+  m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,6 @@ MonoBehaviour:
   Heart_drop: 1
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
   Player: {fileID: 3667916003226391859, guid: 2879d031b32bd3a44adabebe90efd025, type: 3}
-  Weapon: {fileID: 0}
   rb: {fileID: 1993388955390538808}
-  knockbackPower: 0.002
-  knockbackDuration: 0.7
+  knockbackPower: 0.001
+  knockbackDuration: 1.1

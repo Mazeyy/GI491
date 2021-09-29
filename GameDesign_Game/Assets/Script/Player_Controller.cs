@@ -186,7 +186,7 @@ public class Player_Controller : MonoBehaviour
         CrossHair.transform.localPosition = mousePosition;
         CombatDirection = mousePosition - playerpos;
         CombatDirection.Normalize();
-
+        
         if (Range_Attack && rangeCombat == true)
         {
             GameObject bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
@@ -195,8 +195,7 @@ public class Player_Controller : MonoBehaviour
             bullet.GetComponent<bullet>().damage = Random.Range(minDamage, maxDamage);
             bullet.transform.Rotate(0, 0, Mathf.Atan2(CombatDirection.y, CombatDirection.x) * Mathf.Rad2Deg);
             Destroy(bullet, 3.0f);
-        }
-        
+        }        
     }
 }
 
