@@ -8,7 +8,8 @@ public class EnemyAggro : MonoBehaviour
     public float movementSpeed = 1.0f;
     public float movement_base_speed = 1.0f;
     public float Range = 5F;
-    
+    public bool isMoving;
+
     [Space]
     [Header("Statistics :")]    
     private Vector2 movementDirection;  
@@ -40,20 +41,26 @@ public class EnemyAggro : MonoBehaviour
     void Slime_Movement_type()
     {
 
-    }
+    }   
+
 
     void FollowPlayer()
     {
         if (Vector2.Distance(transform.position, PlayerPos.position) <= Range )
-        {            
+        {
+            isMoving = true;
             movementDirection = (PlayerPos.transform.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);            
-        }               
+        }
+        else
+        {
+            isMoving = false;
+        }
     }
     
     void Animate()
     {
-        if (movementDirection != Vector2.zero)
+        if (movementDirection != Vector2.zero && isMoving == true)
         {
             Animator.SetFloat("Horizontal", movementDirection.x);
             Animator.SetFloat("Vertical", movementDirection.y);

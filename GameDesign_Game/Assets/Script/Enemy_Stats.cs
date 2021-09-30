@@ -13,12 +13,14 @@ public class Enemy_Stats : MonoBehaviour
     public bool Heart_drop;
     public GameObject HeartPrefab;
     public GameObject PotionPrefab;
-    public GameObject Player;    
+    public GameObject Player;
+    
     public Rigidbody2D rb;
     //public float health;
 
-    public float knockbackPower = 0.002f;
+    public float knockbackPower = 0.001f;
     public float knockbackDuration = 0.7f;
+    public float knockbackResistance = 0f;
 
     private Animator anim;
 
@@ -29,32 +31,41 @@ public class Enemy_Stats : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Health = MaxHealt;
 
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();        
     }
 
-    private void Update()
+    /*private void Update()
     //ถ้า mon เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
     {
         if (Health <= 499)
         {
             anim.SetTrigger("StateTwo");
         }
-    }
+    }*/
+
 
     public void DealDMG(float damage)
     {
         Health -= damage;
-        print("Damage Taken");        
-        CheckDeath();
+        print("Damage Taken");           
+        CheckDeath();       
     }    
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             StartCoroutine(Player_Controller.instance.Knockback(knockbackDuration, knockbackPower, this.transform));            
-        }        
-    }
+        }   
+        
+        if (other.tag == ("Weapon"))
+        {
+            Vector2 direction = (this.transform.position - other.transform.position);
+            transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y);
+        }
+    }   
+
+    
 
     void CheckDeath()
     {

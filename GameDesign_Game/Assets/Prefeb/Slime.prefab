@@ -102,9 +102,10 @@ MonoBehaviour:
   movementSpeed: 0.2
   movement_base_speed: 1
   Range: 3
+  isMoving: 0
   rb: {fileID: 1993388955390538808}
   Animator: {fileID: 1993388955390538809}
-  Player: {fileID: 3667916003226391871, guid: 2879d031b32bd3a44adabebe90efd025, type: 3}
+  Player: {fileID: 4091540236373401628, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
 --- !u!50 &1993388955390538808
 Rigidbody2D:
   serializedVersion: 4
@@ -117,7 +118,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0042931335
+  m_Mass: 0.004179497
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -158,10 +159,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00053816475, y: -0.038660787}
+  m_Offset: {x: -0.0005381629, y: 0.01921761}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.4}
+    pivot: {x: 0.5, y: 0.2}
     oldSize: {x: 0.21, y: 0.3}
     newSize: {x: 0.21, y: 0.3}
     adaptiveTilingThreshold: 0.5
@@ -169,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10801293, y: 0.03974648}
+  m_Size: {x: 0.10801293, y: 0.03869441}
   m_EdgeRadius: 0
 --- !u!114 &1993388955390538813
 MonoBehaviour:
@@ -189,7 +190,8 @@ MonoBehaviour:
   Heart_drop: 1
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
   PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
-  Player: {fileID: 3667916003226391859, guid: 2879d031b32bd3a44adabebe90efd025, type: 3}
+  Player: {fileID: 4091540236373401616, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
   rb: {fileID: 1993388955390538808}
-  knockbackPower: 0.001
+  knockbackPower: 0.0005
   knockbackDuration: 1.1
+  knockbackResistance: 0

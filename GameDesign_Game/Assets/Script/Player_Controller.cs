@@ -39,7 +39,8 @@ public class Player_Controller : MonoBehaviour
     public Transform Attackpoint;
     public LayerMask whatIsEnemies;
     public float attackRange = 0.5f;
-    public int damage = 10;    
+    public int damage = 10;
+    public float knockbackPower = 0.005f;   
 
     [Space]
     [Header("Bullet")]
@@ -74,11 +75,15 @@ public class Player_Controller : MonoBehaviour
         {
             movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
-            movementDirection.Normalize();          
-                        
+            movementDirection.Normalize();
         }        
 
-        Range_Attack = Input.GetButtonDown("Fire2");        
+        Range_Attack = Input.GetButtonDown("Fire2");
+
+        if (Input.GetButton("Fire1"))
+        {
+            Attack();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
         {
@@ -87,10 +92,8 @@ public class Player_Controller : MonoBehaviour
     }
 
     private void Move()
-    {        
-        
+    {
         rb.velocity = movementDirection * movementSpeed * movementBaseSpeed;
-                            
     }
 
     private void Animate()
@@ -119,41 +122,31 @@ public class Player_Controller : MonoBehaviour
         {            
             if (Input.GetButton("Fire1"))
             {
+                movementDirection = Vector2.zero;
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 playerpos = transform.position;
                 CrossHair.transform.localPosition = mousePosition;
-                CombatDirection = mousePosition - playerpos;
-                Vector3 CombatDash = CombatDirection;
-                CombatDirection.Normalize();
-                float DashCombat = 0.12f;
-                transform.position += CombatDash * DashCombat;
+                CombatDirection = mousePosition - playerpos;                ;
+                CombatDirection.Normalize();                
+                Animator.SetFloat("Hori_Slash", CombatDirection.x);
+                Animator.SetFloat("Vert_Slash", CombatDirection.y);
 
                 Animator.SetTrigger("Attack");
 
-                Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
+                //Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
                 
-                for (int i = 0; i < hitenemies.Length; i++)
-                {
-                    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);                    
-                }
-                timeBtwAttack = startTimeBtwAttack;
-                StartCoroutine(Attacking());
+                //for (int i = 0; i < hitenemies.Length; i++)
+                //{
+                //    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);                    
+                //}
+                timeBtwAttack = startTimeBtwAttack;               
             }            
         }
         else
         {
             timeBtwAttack -= Time.deltaTime;
         }
-    }
-
-    private IEnumerator Attacking()
-    {
-        Animator.SetFloat("Hori_Slash", CombatDirection.x);
-        Animator.SetFloat("Vert_Slash", CombatDirection.y);
-        CanMove = false;
-        yield return new WaitForSeconds(0.2f);
-        CanMove = true;        
-    }
+    }   
 
     public IEnumerator Knockback(float knockbackDuration , float knockbackPower, Transform obj)
     {
@@ -162,10 +155,12 @@ public class Player_Controller : MonoBehaviour
         {
             timer += Time.deltaTime;
             Vector2 direction = (obj.transform.position - this.transform.position).normalized;
-            rb.AddForce(-direction * knockbackPower);
+            rb.AddForce(-direction * knockbackPower);            
         }
         yield return 0;
     }
+
+    
 
     void OnDrawGizmosSelected()
     {
