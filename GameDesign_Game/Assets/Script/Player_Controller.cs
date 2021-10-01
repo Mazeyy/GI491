@@ -40,7 +40,7 @@ public class Player_Controller : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange = 0.5f;
     public int damage = 10;
-    public float knockbackPower = 0.005f;   
+    public float knockbackPower = 1f;   
 
     [Space]
     [Header("Bullet")]
@@ -123,6 +123,7 @@ public class Player_Controller : MonoBehaviour
             if (Input.GetButton("Fire1"))
             {
                 movementDirection = Vector2.zero;
+                rb.velocity = Vector2.zero;
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 playerpos = transform.position;
                 CrossHair.transform.localPosition = mousePosition;

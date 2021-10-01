@@ -11,7 +11,13 @@ public class Attack_box : MonoBehaviour
             Enemy_Stats Enemystats;
             Enemystats = other.gameObject.GetComponent<Enemy_Stats>();
             Enemystats.DealDMG(Player_Controller.instance.damage);
-            //Destroy(other.gameObject);            
+            //Destroy(other.gameObject);
+            //
+            
+        }
+        if(other.tag == ("bullet"))
+        {
+            Destroy(other.gameObject);
         }
     }
 }

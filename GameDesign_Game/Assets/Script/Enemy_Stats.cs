@@ -9,18 +9,21 @@ public class Enemy_Stats : MonoBehaviour
     [Header("Stat :")]
     public float MaxHealt = 1.0f;
     public float Health = 1.0f;
-    public float AttackDMG = 1.0f;
+    public float AttackDMG = 10f;
     public bool Heart_drop;
     public GameObject HeartPrefab;
     public GameObject PotionPrefab;
     public GameObject Player;
-    
+    private Transform PlayerPos;
+
     public Rigidbody2D rb;
     //public float health;
 
     public float knockbackPower = 0.001f;
     public float knockbackDuration = 0.7f;
     public float knockbackResistance = 0f;
+    private float knockCooldown;
+    public float StartknockCooldown = 1;
 
     private Animator anim;
 
@@ -31,7 +34,9 @@ public class Enemy_Stats : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Health = MaxHealt;
 
-        anim = GetComponent<Animator>();        
+        anim = GetComponent<Animator>();
+        PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 
     /*private void Update()
@@ -48,7 +53,8 @@ public class Enemy_Stats : MonoBehaviour
     {
         Health -= damage;
         print("Damage Taken");           
-        CheckDeath();       
+        CheckDeath();        
+
     }    
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -56,16 +62,25 @@ public class Enemy_Stats : MonoBehaviour
         if (other.tag == "Player")
         {
             StartCoroutine(Player_Controller.instance.Knockback(knockbackDuration, knockbackPower, this.transform));            
-        }   
-        
+        }
+
         if (other.tag == ("Weapon"))
         {
-            Vector2 direction = (this.transform.position - other.transform.position);
-            transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y);
+            if (knockCooldown <= 0)
+            {
+                StartCoroutine(Knock());
+                Vector2 direction = (this.transform.position - other.transform.position);
+                transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y * knockbackPower);
+            }
         }
-    }   
+    }
 
-    
+    IEnumerator Knock()
+    {
+        knockCooldown = 0.4f;
+        yield return new WaitForSeconds(knockCooldown);
+        knockCooldown =0;
+    }
 
     void CheckDeath()
     {
