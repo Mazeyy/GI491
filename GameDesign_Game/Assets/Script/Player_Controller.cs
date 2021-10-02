@@ -27,7 +27,7 @@ public class Player_Controller : MonoBehaviour
 
     [Space]
     [Header("Dash")]
-    private float DashSpeed = 3f;
+    private float DashSpeed = 5f;
     public bool IsDashing;
     public float Dashtime;
     public float timeBTWdash;

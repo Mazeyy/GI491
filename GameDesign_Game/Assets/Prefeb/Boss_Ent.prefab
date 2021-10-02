@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9123206453753418996}
   - component: {fileID: 9123206453753418995}
   m_Layer: 0
-  m_Name: Boss_Ent-Sheet_0
+  m_Name: Boss_Ent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4966943736510627714, guid: 95355bfa920d9af4c9a8a8dd15e9aa6d, type: 3}
+  m_Sprite: {fileID: 3443585673117572529, guid: 827f7bec6693b4443bfa7fe58f275f6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9123206453753418994}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -143,6 +143,7 @@ MonoBehaviour:
   knockbackPower: 0.002
   knockbackDuration: 1
   knockbackResistance: 0
+  StartknockCooldown: 1
 --- !u!61 &9123206453753418996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,18 +157,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0037953854, y: 0.04429412}
+  m_Offset: {x: -0.005150825, y: -0.042452544}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.25}
-    oldSize: {x: 1.15, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2.3}
     newSize: {x: 0.87, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.58391166, y: 0.5625752}
+  m_Size: {x: 0.5812008, y: 0.57341856}
   m_EdgeRadius: 0
 --- !u!95 &9123206453753418995
 Animator:
