@@ -7,11 +7,12 @@ TagManager:
   - Enemy
   - Wall
   - Weapon
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Enemie
+  - 
   - Water
   - UI
   - 

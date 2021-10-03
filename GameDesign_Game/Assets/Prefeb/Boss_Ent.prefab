@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 9123206453753418998}
   - component: {fileID: 9123206453753418997}
   - component: {fileID: 9123206453753418985}
-  - component: {fileID: 9123206453753418984}
   - component: {fileID: 9123206453753418996}
   - component: {fileID: 9123206453753418995}
+  - component: {fileID: 8836403388745789015}
   m_Layer: 0
   m_Name: Boss_Ent
   m_TagString: Enemy
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 0.87, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &9123206453753418997
@@ -120,30 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cbac0f95b33aa4babc73d1c17845eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9123206453753418984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9123206453753418994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7431dc2d8d6a8c84e80b7ee167c1064c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealt: 500
-  Health: 500
-  AttackDMG: 20
-  Heart_drop: 0
-  HeartPrefab: {fileID: 0}
-  PotionPrefab: {fileID: 0}
-  Player: {fileID: 0}
-  rb: {fileID: 0}
-  knockbackPower: 0.002
-  knockbackDuration: 1
-  knockbackResistance: 0
-  StartknockCooldown: 1
 --- !u!61 &9123206453753418996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -154,7 +130,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.005150825, y: -0.042452544}
@@ -189,3 +165,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8836403388745789015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9123206453753418994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072b09ca2bac97b45914a557b408c1a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealt: 500
+  Health: 500
+  AttackDMG: 20
+  Heart_drop: 0
+  HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
+  PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
+  Player: {fileID: 4091540236373401616, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+  rb: {fileID: 9123206453753418997}
+  knockbackPower: 0.002
+  knockbackDuration: 1
+  knockbackResistance: 0
+  StartknockCooldown: 1

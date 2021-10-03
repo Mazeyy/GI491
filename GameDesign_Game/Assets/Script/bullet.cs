@@ -20,11 +20,16 @@ public class bullet : MonoBehaviour
         {
             GameObject other = hit.collider.gameObject;
 
-            if (other.CompareTag("Wall") || other.CompareTag("Enemy"))
+            if (other.CompareTag("Wall") || other.CompareTag("Enemy") || other.CompareTag("Boss"))
             {
                 if (other.GetComponent<Enemy_Stats>() != null)
                 {
                     other.GetComponent<Enemy_Stats>().DealDMG(damage);
+                }
+
+                if (other.GetComponent<Boss>() != null)
+                {
+                    other.GetComponent<Boss>().DealDMG(damage);
                 }
                 Destroy(gameObject);
             }

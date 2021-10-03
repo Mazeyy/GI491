@@ -40,9 +40,9 @@ public class Enemy_Stats : MonoBehaviour
     }
 
     /*private void Update()
-    //ถ้า mon เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
+    //ถ้า Boss เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
     {
-        if (Health <= 499)
+        if (Health <= 250)
         {
             anim.SetTrigger("StateTwo");
         }

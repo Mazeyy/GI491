@@ -15,6 +15,13 @@ public class Attack_box : MonoBehaviour
             //
             
         }
+        if(other.tag == ("Boss"))
+        {
+            Boss Bossstats;
+            Bossstats = other.gameObject.GetComponent<Boss>();
+            Bossstats.DealDMG(Player_Controller.instance.damage);
+        }
+
         if(other.tag == ("bullet"))
         {
             Destroy(other.gameObject);
