@@ -30,6 +30,11 @@ public class Boss : MonoBehaviour
     private float currentTimeToSpawn;
     public float spawnRadius = 1;
 
+    [Space]
+    [Header("Shoot :")]
+    public float fireRate = 1f;
+    private float nextFire;
+
 
     /*public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
@@ -53,19 +58,23 @@ public class Boss : MonoBehaviour
         if (Health <= 350)
         {
             anim.SetTrigger("StateTwo");
-            //BulletSpawner();
-
+            //BulletSpawner();            
             if (currentTimeToSpawn > 0)
             {
                 currentTimeToSpawn -= Time.deltaTime;
-            }
+                if (nextFire < Time.time)
+                {
+                    Instantiate(BossBulletPf, transform.position, Quaternion.identity);
+                    nextFire = Time.time + fireRate;
+                }
+            }            
             else
-            {
-                Instantiate(BossBulletPf, transform.position, Quaternion.identity);
-
+            {                
                 currentTimeToSpawn = TimeToSpawn;
-                Destroy(BossBulletPf, 5f);
+                
             }
+
+
         }
         if (Health <= 100)
         {

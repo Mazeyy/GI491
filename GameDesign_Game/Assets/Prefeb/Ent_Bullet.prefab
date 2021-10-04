@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2458068400171251395}
   - component: {fileID: 7287058306256863094}
   - component: {fileID: 8828443700374944795}
+  - component: {fileID: 6742878812821388724}
   m_Layer: 0
   m_Name: Ent_Bullet
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7092466821209894448, guid: 96cbc2497de586142806d48bf1f16b8c, type: 3}
+  m_Sprite: {fileID: 7872297564212688112, guid: af159f2420cca9b408c27b14cce9f9ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -118,6 +119,22 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0003038235, y: 0.014579922}
+  m_Offset: {x: 0.01632756, y: -0.00060525537}
   serializedVersion: 2
-  m_Radius: 0.04480329
+  m_Radius: 0.04046467
+--- !u!114 &6742878812821388724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627452684754682931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2faf2b1bdef4c0d46ae622d25691f4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0}
+  target: {fileID: 0}
+  damage: 10
+  speed: 2
