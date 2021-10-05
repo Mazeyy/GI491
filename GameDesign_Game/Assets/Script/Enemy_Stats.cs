@@ -39,16 +39,6 @@ public class Enemy_Stats : MonoBehaviour
 
     }
 
-    /*private void Update()
-    //ถ้า Boss เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
-    {
-        if (Health <= 250)
-        {
-            anim.SetTrigger("StateTwo");
-        }
-    }*/
-
-
     public void DealDMG(float damage)
     {
         Health -= damage;

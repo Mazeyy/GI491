@@ -27,7 +27,7 @@ public class Boss : MonoBehaviour
     private Animator anim;
 
     public float TimeToSpawn;
-    private float currentTimeToSpawn;
+    public float currentTimeToSpawn;
     public float spawnRadius = 1;
 
     [Space]
@@ -37,6 +37,8 @@ public class Boss : MonoBehaviour
 
     private float dist;
     public float howClose;
+
+    private int countRoot;
 
     /*public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
@@ -139,19 +141,32 @@ public class Boss : MonoBehaviour
             else
             {
                 SpawnObjectAtRandom();
+
+                /*if (countRoot < 10)
+                {
+                    SpawnObjectAtRandom();
+                    countRoot++;
+                }
                 
-                //Instantiate(ThronPrefab, transform.position, Quaternion.identity);
+                else if (countRoot > 9)
+                {
+                    countRoot++;
+                    
+                    if (countRoot > 15)
+                    {
+                        countRoot = 0;
+                    }
+                }*/
 
                 currentTimeToSpawn = TimeToSpawn;
-                //Destroy(ThronPrefab, 0.5f);
             }
         }
     }
 
     void SpawnObjectAtRandom()
     {
-        Vector2 randomPos = Random.insideUnitCircle * spawnRadius;
-        Instantiate(ThronPrefab, randomPos, Quaternion.identity);
+            Vector2 randomPos = Random.insideUnitCircle * spawnRadius;
+            Instantiate(ThronPrefab, randomPos, Quaternion.identity);
     }
 
     /*private void OnDrawGizmos()

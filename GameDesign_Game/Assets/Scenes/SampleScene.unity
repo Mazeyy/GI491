@@ -1321,6 +1321,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
+      propertyPath: Health
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 433897334}
@@ -1329,16 +1333,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 433897334}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
+      propertyPath: MaxHealt
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: howClose
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: ThronPrefab
       value: 
-      objectReference: {fileID: 8216910397220233105, guid: 2e45715b6228e6547a750884f5cbd335, type: 3}
+      objectReference: {fileID: 3191729226705696926, guid: 12e2bcf4825e043469ea174fb6915a9a, type: 3}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: TimeToSpawn
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: BossBulletPf
