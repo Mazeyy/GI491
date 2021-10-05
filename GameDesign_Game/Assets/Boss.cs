@@ -35,6 +35,8 @@ public class Boss : MonoBehaviour
     public float fireRate = 1f;
     private float nextFire;
 
+    private float dist;
+    public float howClose;
 
     /*public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
@@ -49,16 +51,18 @@ public class Boss : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
 
+
         //StartCoroutine(SpawnThron());
     }
 
      void Update()
     //ถ้า Boss เหลือเลือดเท่าที่กำหนด ก็เปลี่ยน state
     {
-        if (Health <= 350)
+        dist = Vector2.Distance(PlayerPos.position, transform.position);
+
+        if (dist >= howClose)
         {
-            anim.SetTrigger("StateTwo");
-            //BulletSpawner();            
+            anim.SetTrigger("StateTwo");  
             if (currentTimeToSpawn > 0)
             {
                 currentTimeToSpawn -= Time.deltaTime;
@@ -67,15 +71,63 @@ public class Boss : MonoBehaviour
                     Instantiate(BossBulletPf, transform.position, Quaternion.identity);
                     nextFire = Time.time + fireRate;
                 }
-            }            
-            else
-            {                
-                currentTimeToSpawn = TimeToSpawn;
-                
+                else
+                {
+                    currentTimeToSpawn = TimeToSpawn;
+                }
             }
-
-
         }
+        if (dist <= howClose)
+        {
+            anim.SetTrigger("Melee");
+            if (currentTimeToSpawn > 0)
+            {
+                currentTimeToSpawn -= Time.deltaTime;
+            }
+            else
+            {
+                currentTimeToSpawn = TimeToSpawn;
+            }
+        }
+        
+        /*if (dist <= 1f)
+        {
+            anim.SetTrigger("Melee");
+            if (currentTimeToSpawn > 0)
+            {
+                currentTimeToSpawn -= Time.deltaTime;
+            }
+            else
+            {
+                currentTimeToSpawn = TimeToSpawn;
+            }
+        }*/
+
+        /*else
+        {
+            //anim.SetTrigger("Melee");
+            currentTimeToSpawn = TimeToSpawn;
+        }*/
+
+        //if (Health <= 350)
+        //{
+        /*anim.SetTrigger("StateTwo");
+        //BulletSpawner();            
+        if (currentTimeToSpawn > 0)
+        {
+            currentTimeToSpawn -= Time.deltaTime;
+            if (nextFire < Time.time)
+            {
+                Instantiate(BossBulletPf, transform.position, Quaternion.identity);
+                nextFire = Time.time + fireRate;
+            }
+        }            
+        else
+        {                
+            currentTimeToSpawn = TimeToSpawn;
+
+        }*/
+        //}
         if (Health <= 100)
         {
             anim.SetTrigger("StateThree");
