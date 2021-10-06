@@ -23,33 +23,12 @@ public class Enemy_Bullet : MonoBehaviour
         rbBullet.velocity = new Vector2(moveDirection.x, moveDirection.y);
         Destroy(this.gameObject, 2);
     }
-
-    /*void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.position = Vector2.MoveTowards(transform.position,target,speed * Time.deltaTime);
-        Vector2 currenPosition = new Vector2(transform.position.x, transform.position.y);
-        Vector2 newPosition = currenPosition + velocity * Time.deltaTime;
-
-        RaycastHit2D[] hits = Physics2D.LinecastAll(currenPosition, newPosition);
-
-        foreach (RaycastHit2D hit in hits)
+        if (collision.CompareTag("Player"))
         {
-            GameObject other = hit.collider.gameObject;
-
-            if (other.CompareTag("Wall") || other.CompareTag("Player"))
-            {
-                if (other.GetComponent<Player_Stats>() != null)
-                {
-                    other.GetComponent<Player_Stats>().DealDMG(damage);
-                }
-
-                //if (other.GetComponent<Boss>() != null)
-                //{
-                //    other.GetComponent<Boss>().DealDMG(damage);
-                //}
-                Destroy(gameObject);
-            }
+            Destroy(this.gameObject);
         }
-        transform.position = newPosition;
-    }*/
+    }
+
 }

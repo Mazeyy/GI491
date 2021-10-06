@@ -10,7 +10,8 @@ public class StateThreeBehaviour : StateMachineBehaviour
     {        
 
         animator.SetTrigger("SummonThorn");
-              
+        Boss.thisboss.Idle = false;
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

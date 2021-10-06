@@ -13,8 +13,9 @@ public class IdleBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = Random.Range(minTime, maxTime);       
-        
+        timer = Random.Range(minTime, maxTime);
+        Boss.thisboss.currenAttacking = false;
+        Boss.thisboss.currenShooting = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -35,7 +36,7 @@ public class IdleBehaviour : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Boss.thisboss.Idle = false;
+        
     }
 
 }

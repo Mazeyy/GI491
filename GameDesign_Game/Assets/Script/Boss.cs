@@ -37,7 +37,7 @@ public class Boss : MonoBehaviour
 
     [Space]
     [Header("Shoot :")]
-    public float fireRate = 1f;
+    public float fireRate = 0.2f;
     private float nextFire;
 
     private float dist;
@@ -63,9 +63,9 @@ public class Boss : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;       
     }
-     void Update()
-    
+     void Update()    
     {
+        dist = Vector2.Distance(PlayerPos.position, transform.position);
         /*if (dist <= 1f)
         {
             anim.SetTrigger("Melee");
@@ -118,37 +118,47 @@ public class Boss : MonoBehaviour
     }
     public void Attack()
     {
-        if (Idle == false)
-        {
-            dist = Vector2.Distance(PlayerPos.position, transform.position);
-
-            if (dist >= howClose && currenAttacking == false)
+        
+            if (dist > howClose && currenAttacking == false)
             {
-                
-                    if (nextFire < Time.time)
-                    {
-                        anim.SetTrigger("Shoot");
-                        StartCoroutine(Shoot());
-                    }
-                    else
-                    {
-                        nextFire -= Time.deltaTime;
-                    }
+                StartCoroutine(Shoot());
+                //if (nextFire < Time.time)
+                //    {                        
+                //        StartCoroutine(Shoot());
+                //    }
+                //    else
+                //    {
+                //        nextFire -= Time.deltaTime;
+                //    }
                 
             }
-            if (dist <= howClose && currenShooting == false)
+            if (dist < howClose && currenShooting == false)
             {
                 anim.SetTrigger("Melee");                
             }
-        }                  
+                         
     }
 
     public IEnumerator Shoot()
-    {        
-        yield return new WaitForSeconds(0.7f);
-        Instantiate(BossBulletPf, transform.position, Quaternion.identity);
-        nextFire = Time.time + fireRate;
+    {
+        anim.SetTrigger("Shoot");
+        yield return new WaitForSeconds(0.3f);
+        if (nextFire < Time.time)
+        {
+            Instantiate(BossBulletPf, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
+        }
+        yield return new WaitForSeconds(0.3f);
     }
+
+    /*public IEnumerator MeleeAttack()
+    {
+        anim.SetTrigger("Melee");
+        yield return new WaitForSeconds(nextFire)
+        {
+
+        }
+    }*/
 
     void SpawnObjectAtRandom()
     {

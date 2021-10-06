@@ -40,7 +40,8 @@ public class Player_Controller : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange = 0.5f;
     public int damage = 10;
-    public float knockbackPower = 1f;   
+    public float knockbackPower = 1f;
+    public float knockCooldown = 1;
 
     [Space]
     [Header("Bullet")]
@@ -156,9 +157,11 @@ public class Player_Controller : MonoBehaviour
         {
             timer += Time.deltaTime;
             Vector2 direction = (obj.transform.position - this.transform.position).normalized;
-            rb.AddForce(-direction * knockbackPower);            
-        }
+            rb.AddForce(-direction * knockbackPower);
+            knockbackDuration = knockCooldown;
+        }        
         yield return 0;
+        
     }
 
     
