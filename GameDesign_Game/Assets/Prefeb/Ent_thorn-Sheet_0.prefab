@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8650430098599408540}
   - component: {fileID: 5406172478002087503}
   - component: {fileID: 6727507137654403517}
-  - component: {fileID: 508906547843888543}
+  - component: {fileID: 8748542284026295075}
   m_Layer: 0
   m_Name: Ent_thorn-Sheet_0
   m_TagString: Untagged
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &508906547843888543
+--- !u!114 &8748542284026295075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,7 +112,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3191729226705696926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4e5eb2492f04142b63ab2a480b68cd, type: 3}
+  m_Script: {fileID: 11500000, guid: b2d7b48bc6b0cbe47bd2fa4ac3b62277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2.8

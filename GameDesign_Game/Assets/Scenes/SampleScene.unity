@@ -176,7 +176,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 2
+  serializedVersion: 3
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -215,7 +215,7 @@ LightingSettings:
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
-  m_PVRRussianRouletteStartBounce: 2
+  m_PVRMinBounces: 1
   m_PVREnvironmentMIS: 0
   m_PVRFilteringMode: 2
   m_PVRDenoiserTypeDirect: 0
@@ -1284,9 +1284,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: damage
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: Dashtime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: CrossHair
       value: 
       objectReference: {fileID: 1870561093}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: timeBTWdash
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: whatIsEnemies.m_Bits
       value: 8
@@ -1338,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: howClose
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: ThronPrefab
@@ -1346,7 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 3191729226705696926, guid: 12e2bcf4825e043469ea174fb6915a9a, type: 3}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: TimeToSpawn
-      value: 1
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
+      propertyPath: spawnRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8836403388745789015, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
       propertyPath: BossBulletPf
@@ -1434,4 +1450,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 9123206453753418985, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2b946f11038adab40ba0eb8feed27f85, type: 3}
