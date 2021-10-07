@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -47,6 +48,8 @@ public class Boss : MonoBehaviour
 
     public static Boss thisboss;
 
+    public Slider sd;
+
     /*public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
 
@@ -61,7 +64,12 @@ public class Boss : MonoBehaviour
         Health = MaxHealt;
 
         anim = GetComponent<Animator>();
-        PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;       
+        PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
+
+        sd.minValue = 0;
+        sd.maxValue = MaxHealt;
+        sd.value = Health;
+        sd.wholeNumbers = true;
     }
      void Update()    
     {
@@ -115,6 +123,7 @@ public class Boss : MonoBehaviour
                 
             }
         }
+        sd.value = Health;
     }
     public void Attack()
     {
