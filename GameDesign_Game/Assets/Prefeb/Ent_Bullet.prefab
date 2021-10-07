@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7287058306256863094}
   - component: {fileID: 8828443700374944795}
   - component: {fileID: 6742878812821388724}
+  - component: {fileID: 6039645467993621533}
   m_Layer: 0
   m_Name: Ent_Bullet
   m_TagString: Untagged
@@ -137,4 +138,18 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   target: {fileID: 0}
   damage: 10
-  speed: 2
+  speed: 1.5
+--- !u!114 &6039645467993621533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627452684754682931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848904210a7fbd54288b5d603de073d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  destroyAfhit: 1

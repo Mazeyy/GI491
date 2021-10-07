@@ -46,11 +46,14 @@ public class EnemyAggro : MonoBehaviour
 
     void FollowPlayer()
     {
-        if (Vector2.Distance(transform.position, PlayerPos.position) <= Range )
+        if (Player_Stats.PlayerStats.Health > 0)
         {
-            isMoving = true;
-            movementDirection = (PlayerPos.transform.position - transform.position).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);            
+            if (Vector2.Distance(transform.position, PlayerPos.position) <= Range)
+            { 
+                isMoving = true;
+                movementDirection = (PlayerPos.transform.position - transform.position).normalized;
+                transform.position = Vector2.MoveTowards(transform.position, PlayerPos.position, movementSpeed * Time.deltaTime);
+            }            
         }
         else
         {

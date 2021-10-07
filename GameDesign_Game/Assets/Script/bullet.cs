@@ -7,7 +7,7 @@ public class bullet : MonoBehaviour
     public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
 
-    public float damage;
+    public float damage;    
 
     void FixedUpdate()
     {

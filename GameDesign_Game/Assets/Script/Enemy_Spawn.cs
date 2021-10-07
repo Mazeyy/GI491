@@ -16,12 +16,15 @@ public class Enemy_Spawn : MonoBehaviour
 
     IEnumerator SpawnAnEnemy()
     {
-        Vector2 spawnPosition = GameObject.Find("Player").transform.position;
-        spawnPosition += Random.insideUnitCircle.normalized * spawnRadius;
+        if (Player_Stats.PlayerStats.Health > 0)
+        {
+            Vector2 spawnPosition = GameObject.Find("Player").transform.position;
+            spawnPosition += Random.insideUnitCircle.normalized * spawnRadius;
 
-        Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPosition, Quaternion.identity);
-        yield return new WaitForSeconds(spawntime);
-        StartCoroutine(SpawnAnEnemy());
+            Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPosition, Quaternion.identity);
+            yield return new WaitForSeconds(spawntime);
+            StartCoroutine(SpawnAnEnemy());
+        }
     }
     
 }

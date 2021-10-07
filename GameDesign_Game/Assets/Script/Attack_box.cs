@@ -10,21 +10,20 @@ public class Attack_box : MonoBehaviour
         {
             Enemy_Stats Enemystats;
             Enemystats = other.gameObject.GetComponent<Enemy_Stats>();
-            Enemystats.DealDMG(Player_Controller.instance.damage);
-            //Destroy(other.gameObject);
-            //
+            Enemystats.DealDMG(Player_Stats.PlayerStats.damage);          
             
         }
+
         if(other.tag == ("Boss"))
         {
             Boss Bossstats;
             Bossstats = other.gameObject.GetComponent<Boss>();
-            Bossstats.DealDMG(Player_Controller.instance.damage);
+            Bossstats.DealDMG(Player_Stats.PlayerStats.damage);
         }
 
-        if(other.tag == ("bullet"))
-        {
-            Destroy(other.gameObject);
-        }
+        //if(other.tag == ("bullet"))
+        //{
+        //    Destroy(other.gameObject);
+        //}
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Stats : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class Player_Stats : MonoBehaviour
     [Header("Stat :")]
     public float MaxHealth;
     public float Health;
+    public int damage = 10;
 
     public GameObject player;
     public static Player_Stats PlayerStats;
+
+    public Slider HealthBar;
 
     void Awake()
     {
@@ -28,6 +32,16 @@ public class Player_Stats : MonoBehaviour
     private void Start()
     {
         Health = MaxHealth;
+        HealthBar.maxValue = MaxHealth;
+    }
+
+    public void Update()
+    {
+        if (Health >= 0)
+        {
+            HealthBar.value = 0;
+        }
+        HealthBar.value = Health;
     }
 
     public void DealDMG(float damage)
@@ -54,7 +68,7 @@ public class Player_Stats : MonoBehaviour
     {
         if (Health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(player.gameObject);
         }
     }
 }

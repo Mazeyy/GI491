@@ -19,7 +19,7 @@ public class Enemy_Stats : MonoBehaviour
     public Rigidbody2D rb;
     //public float health;
 
-    public float knockbackPower = 0.001f;
+    public float knockbackPower = 0.1f;
     public float knockbackDuration = 0.7f;
     public float knockbackResistance = 0f;
     private float knockCooldown;
@@ -28,7 +28,7 @@ public class Enemy_Stats : MonoBehaviour
     private Animator anim;
 
     private int randDrop;
-
+   
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,6 +37,10 @@ public class Enemy_Stats : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
 
+    }
+    private void Update()
+    {
+        //PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void DealDMG(float damage)
@@ -59,15 +63,16 @@ public class Enemy_Stats : MonoBehaviour
             if (knockCooldown <= 0)
             {
                 StartCoroutine(Knock());
-                Vector2 direction = (this.transform.position - other.transform.position);
-                transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y * knockbackPower);
+                Vector2 direction = (this.transform.position - PlayerPos.transform.position);
+                transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y/* * knockbackPower*/);
             }
         }
+        
     }
 
     IEnumerator Knock()
     {
-        knockCooldown = 0.4f;
+        knockCooldown = 0.2f;
         yield return new WaitForSeconds(knockCooldown);
         knockCooldown =0;
     }
@@ -84,7 +89,7 @@ public class Enemy_Stats : MonoBehaviour
     void ItemDrop()
     {
         randDrop = Random.Range(1, 10);
-        if (randDrop == 1)
+        if (randDrop == 5)
         {
             Vector2 position = transform.position;
             GameObject Heart = Instantiate(HeartPrefab, position, Quaternion.identity);

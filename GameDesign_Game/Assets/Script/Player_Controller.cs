@@ -6,7 +6,7 @@ public class Player_Controller : MonoBehaviour
 {
     [Space]
     [Header("CharacterAttributes:")]
-    private float movementBaseSpeed = 1.0f;
+    public float movementBaseSpeed = 1.0f;
     public static Player_Controller instance;
     private bool CanMove = true;
 
@@ -20,18 +20,16 @@ public class Player_Controller : MonoBehaviour
     [Header("References:")]
     public Rigidbody2D rb;
     public Animator Animator;
-    public GameObject CrossHair;
-    public bool rangeCombat;    
-    private bool Range_Attack;
-    public GameObject ArrowCircle;
+    public GameObject CrossHair;    
+    public GameObject ArrowCircle;    
 
     [Space]
     [Header("Dash")]
-    private float DashSpeed = 3f;
+    public float DashSpeed;
     public bool IsDashing;
     public float Dashtime;
     public float timeBTWdash;
-
+    
     [Space]
     [Header("Melee")]
     private float timeBtwAttack;
@@ -42,10 +40,14 @@ public class Player_Controller : MonoBehaviour
     public int damage = 10;
     public float knockbackPower = 1f;
     public float knockCooldown = 1;
+    public float SlideAttack;
 
     [Space]
-    [Header("Bullet")]
+    [Header("Range")]
     public GameObject BulletPrefab;
+    public bool rangeCombat;
+    private bool Range_Attack;
+
     public float BulletSpd;
     public float minDamage;
     public float maxDamage;        
@@ -79,16 +81,16 @@ public class Player_Controller : MonoBehaviour
             movementDirection.Normalize();
         }        
 
-        Range_Attack = Input.GetButtonDown("Fire2");
-
-        if (Input.GetButton("Fire1"))
-        {
-            Attack();
-        }
+        Range_Attack = Input.GetButtonDown("Fire2");        
 
         if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
         {
-            StartCoroutine(Dashing());
+            if (timeBTWdash <= 0)
+            {
+                movementBaseSpeed = 1;
+                StartCoroutine(Dashing());
+                Debug.Log("dash");
+            }           
         }
     }
 
@@ -108,23 +110,23 @@ public class Player_Controller : MonoBehaviour
         Animator.SetFloat("Speed", movementSpeed);       
     } 
     private IEnumerator Dashing()
-    {                      
+    {
+        Debug.Log("dash");
         IsDashing = true;
-        movementBaseSpeed = movementBaseSpeed * movementSpeed * DashSpeed;
-        yield return new WaitForSeconds(Dashtime);
-        movementBaseSpeed = 1;
-        yield return new WaitForSeconds(timeBTWdash);
-        IsDashing = false;
+        rb.AddForce(movementDirection * DashSpeed * Time.deltaTime);
+        //movementBaseSpeed = movementBaseSpeed * movementSpeed * DashSpeed;        
+        yield return new WaitForSeconds(0.2f);
+        IsDashing = false;        
     }
 
     void Attack()
     {       
         if (timeBtwAttack <= 0)
-        {            
+        {           
+            
             if (Input.GetButton("Fire1"))
             {
-                movementDirection = Vector2.zero;
-                rb.velocity = Vector2.zero;
+                movementDirection = Vector2.zero;                
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 playerpos = transform.position;
                 CrossHair.transform.localPosition = mousePosition;
@@ -132,6 +134,8 @@ public class Player_Controller : MonoBehaviour
                 CombatDirection.Normalize();                
                 Animator.SetFloat("Hori_Slash", CombatDirection.x);
                 Animator.SetFloat("Vert_Slash", CombatDirection.y);
+
+                //rb.AddForce(CombatDirection * SlideAttack);   //player slide while attack
 
                 Animator.SetTrigger("Attack");
 
@@ -145,10 +149,21 @@ public class Player_Controller : MonoBehaviour
             }            
         }
         else
-        {
+        {            
             timeBtwAttack -= Time.deltaTime;
         }
-    }   
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (Attackpoint == null)
+        {
+            return;
+        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(Attackpoint.position, attackRange);
+    }
+
 
     public IEnumerator Knockback(float knockbackDuration , float knockbackPower, Transform obj)
     {
@@ -162,20 +177,7 @@ public class Player_Controller : MonoBehaviour
         }        
         yield return 0;
         
-    }
-
-    
-
-    void OnDrawGizmosSelected()
-    {
-        if (Attackpoint == null)
-        {
-            return;
-        }
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(Attackpoint.position, attackRange);
-    }
-
+    }    
 
 
     public void Shoot()

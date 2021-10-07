@@ -8,6 +8,7 @@ public class Heart_Stat : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Player_Stats.PlayerStats.Health += 5;
             Destroy(gameObject);
         }
     }

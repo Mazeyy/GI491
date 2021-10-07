@@ -7,9 +7,9 @@ public class Boss : MonoBehaviour
 {
     [Space]
     [Header("Stat :")]
-    public float MaxHealt = 1.0f;
-    public float Health = 1.0f;
-    public float AttackDMG = 10f;
+    public float MaxHealt;
+    public float Health;
+    public float AttackDMG;
     public GameObject TeleportPrefab;
     public GameObject ThronPrefab;
     public GameObject BossBulletPf;
@@ -38,17 +38,17 @@ public class Boss : MonoBehaviour
 
     [Space]
     [Header("Shoot :")]
-    public float fireRate = 0.2f;
+    public float fireRate = 0.5f;
     private float nextFire;
+    public float attackRate;
+    public bool canShoot = true;
 
     private float dist;
-    public float howClose;
-
-    private int countRoot;
+    public float howClose;    
 
     public static Boss thisboss;
 
-    public Slider sd;
+    public Slider HealthBar;
 
     /*public Vector2 velocity = new Vector2(0, 0);
     public GameObject player;
@@ -66,52 +66,24 @@ public class Boss : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
 
-        sd.minValue = 0;
-        sd.maxValue = MaxHealt;
-        sd.value = Health;
-        sd.wholeNumbers = true;
+        //HealthBar.minValue = 0;
+        HealthBar.maxValue = MaxHealt;
+        //HealthBar.value = Health;
+        //HealthBar.wholeNumbers = true;
     }
      void Update()    
     {
-        dist = Vector2.Distance(PlayerPos.position, transform.position);
-        /*if (dist <= 1f)
+        if(Health >= 0)
         {
-            anim.SetTrigger("Melee");
-            if (currentTimeToSpawn > 0)
-            {
-                currentTimeToSpawn -= Time.deltaTime;
-            }
-            else
-            {
-                currentTimeToSpawn = TimeToSpawn;
-            }
-        }*/
+            HealthBar.value = 0;
+        }
+        HealthBar.value = Health;
 
-        /*else
+        if(Player_Stats.PlayerStats.Health > 0)
         {
-            //anim.SetTrigger("Melee");
-            currentTimeToSpawn = TimeToSpawn;
-        }*/
-
-        //if (Health <= 350)
-        //{
-        /*anim.SetTrigger("StateTwo");
-        //BulletSpawner();            
-        if (currentTimeToSpawn > 0)
-        {
-            currentTimeToSpawn -= Time.deltaTime;
-            if (nextFire < Time.time)
-            {
-                Instantiate(BossBulletPf, transform.position, Quaternion.identity);
-                nextFire = Time.time + fireRate;
-            }
-        }            
-        else
-        {                
-            currentTimeToSpawn = TimeToSpawn;
-
-        }*/
-        //}
+            dist = Vector2.Distance(PlayerPos.position, transform.position);
+        }        
+        
         if (Health <= 100)
         {
             anim.SetTrigger("StateThree");
@@ -123,41 +95,40 @@ public class Boss : MonoBehaviour
                 
             }
         }
-        sd.value = Health;
+        HealthBar.value = Health;
     }
     public void Attack()
     {
-        
-            if (dist > howClose && currenAttacking == false)
+        if(attackRate < Time.time)
+        {        
+            
+            if (dist > howClose && currenAttacking == false && canShoot == true)
             {
-                StartCoroutine(Shoot());
-                //if (nextFire < Time.time)
-                //    {                        
-                //        StartCoroutine(Shoot());
-                //    }
-                //    else
-                //    {
-                //        nextFire -= Time.deltaTime;
-                //    }
+                StartCoroutine(Shoot());           
                 
             }
             if (dist < howClose && currenShooting == false)
             {
                 anim.SetTrigger("Melee");                
             }
-                         
+
+            attackRate = Time.time + fireRate;
+        }
+
     }
 
     public IEnumerator Shoot()
-    {
+    {              
+        
         anim.SetTrigger("Shoot");
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         if (nextFire < Time.time)
         {
             Instantiate(BossBulletPf, transform.position, Quaternion.identity);
             nextFire = Time.time + fireRate;
         }
-        yield return new WaitForSeconds(0.3f);
+        canShoot = true;
+        
     }
 
     /*public IEnumerator MeleeAttack()
@@ -209,9 +180,16 @@ public class Boss : MonoBehaviour
     {
         if (Health <= 0)
         {
-            Destroy(gameObject);
-            TeleportDrop();
+            StartCoroutine(Death());
         }
+    }
+    IEnumerator Death()
+    {
+        
+        yield return new WaitForEndOfFrame();
+        Destroy(gameObject);
+        TeleportDrop();
+        
     }
 
     void TeleportDrop()
