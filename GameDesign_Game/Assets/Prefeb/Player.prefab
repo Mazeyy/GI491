@@ -190,13 +190,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce177c6a3591ad429b795aa2e50913b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementBaseSpeed: 1
+  movementBaseSpeed: 5
   movementSpeed: 1
   rb: {fileID: 4091540236373401630}
   Animator: {fileID: 4091540236454647183}
   CrossHair: {fileID: 0}
-  rangeCombat: 1
   ArrowCircle: {fileID: 2153111017087297480}
+  DashSpeed: 1
   IsDashing: 0
   Dashtime: 0.15
   timeBTWdash: 0.5
@@ -209,7 +209,9 @@ MonoBehaviour:
   damage: 10
   knockbackPower: 0.001
   knockCooldown: 1
+  SlideAttack: 0
   BulletPrefab: {fileID: 982915692290334692, guid: 12efb8ada16909a4aa643bc4ec9cee37, type: 3}
+  rangeCombat: 1
   BulletSpd: 3
   minDamage: 12
   maxDamage: 15
@@ -290,7 +292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   Health: 10
+  damage: 10
   player: {fileID: 4091540236373401616}
+  HealthBar: {fileID: 0}
 --- !u!1 &4091540236454647168
 GameObject:
   m_ObjectHideFlags: 0

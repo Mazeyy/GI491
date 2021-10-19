@@ -19,7 +19,7 @@ public class PlayerAttack : StateMachineBehaviour
      
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Player_Controller.instance.movementBaseSpeed = 1;
+        Player_Controller.instance.movementBaseSpeed = 5;
         Debug.Log("playerspeed" + Player_Controller.instance.movementBaseSpeed);
     }
     

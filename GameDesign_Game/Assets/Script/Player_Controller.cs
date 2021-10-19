@@ -29,7 +29,8 @@ public class Player_Controller : MonoBehaviour
     public bool IsDashing;
     public float Dashtime;
     public float timeBTWdash;
-    
+    public float StarttimeBTWdash;
+
     [Space]
     [Header("Melee")]
     private float timeBtwAttack;
@@ -87,10 +88,14 @@ public class Player_Controller : MonoBehaviour
         {
             if (timeBTWdash <= 0)
             {
-                movementBaseSpeed = 1;
+                rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Impulse);
                 StartCoroutine(Dashing());
                 Debug.Log("dash");
-            }           
+            }            
+        }
+        else
+        {
+            timeBTWdash -= Time.deltaTime;
         }
     }
 
@@ -112,12 +117,13 @@ public class Player_Controller : MonoBehaviour
     private IEnumerator Dashing()
     {
         Debug.Log("dash");
-        IsDashing = true;
-        rb.AddForce(movementDirection * DashSpeed * Time.deltaTime);
-        //movementBaseSpeed = movementBaseSpeed * movementSpeed * DashSpeed;        
+        IsDashing = true;        
+        rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Impulse);        
         yield return new WaitForSeconds(0.2f);
-        IsDashing = false;        
-    }
+        timeBTWdash = Dashtime;
+        IsDashing = false;
+        
+    }    
 
     void Attack()
     {       
@@ -137,10 +143,9 @@ public class Player_Controller : MonoBehaviour
 
                 //rb.AddForce(CombatDirection * SlideAttack);   //player slide while attack
 
-                Animator.SetTrigger("Attack");
-
+                Animator.SetTrigger("Attack");                
                 //Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
-                
+
                 //for (int i = 0; i < hitenemies.Length; i++)
                 //{
                 //    hitenemies[i].GetComponent<Enemy_Stats>().DealDMG(damage);                    

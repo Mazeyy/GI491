@@ -64,7 +64,9 @@ public class Enemy_Stats : MonoBehaviour
             {
                 StartCoroutine(Knock());
                 Vector2 direction = (this.transform.position - PlayerPos.transform.position);
+                direction = direction.normalized * 1;
                 transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y/* * knockbackPower*/);
+                
             }
         }
         
