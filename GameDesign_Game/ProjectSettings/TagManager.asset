@@ -45,6 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Leaf
+    uniqueID: 2977690741
+    locked: 0
+  - name: Boss
+    uniqueID: 1590765915
+    locked: 0
   - name: Player
     uniqueID: 325632139
     locked: 0
