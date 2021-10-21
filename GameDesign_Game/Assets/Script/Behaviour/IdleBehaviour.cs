@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class IdleBehaviour : StateMachineBehaviour
 {
-
-
     public float timer;
     public float minTime;
     public float maxTime;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3934345936873305387}
   - component: {fileID: 3934345936873305384}
   - component: {fileID: 3934345936873305389}
-  - component: {fileID: 7652291980707248851}
+  - component: {fileID: 2231563719469773324}
   m_Layer: 0
   m_Name: Medium_Stone
   m_TagString: Wall
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &3934345936873305389
 Rigidbody2D:
   serializedVersion: 4
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &7652291980707248851
-BoxCollider2D:
+--- !u!60 &2231563719469773324
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,16 +118,21 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0093963295, y: -0.0065365583}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.21, y: 0.17}
+    oldSize: {x: 1.3125, y: 1.0625}
     newSize: {x: 0.21, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.19120732, y: 0.11934158}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.6606815, y: 0.037144065}
+      - {x: -0.65554535, y: -0.15238762}
+      - {x: -0.40365785, y: -0.40716952}
+      - {x: 0.21966958, y: -0.40052235}
+      - {x: 0.52773815, y: -0.09604895}
+      - {x: 0.53216964, y: 0.039359838}
