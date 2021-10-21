@@ -48,6 +48,12 @@ public class Enemy_Shoot : MonoBehaviour
         Animate();
         FollowPlayer();
         Slime_Movement_type();
+
+        if (Player_Stats.PlayerStats.Health > 0)
+        {
+            dist = Vector2.Distance(PlayerPos.position, transform.position);
+        }
+
     }
 
     void Slime_Movement_type()
