@@ -1,679 +1,644 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'th' Physical Memory: 16326 MB
+Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19042.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 8046 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
-COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
+ COMMAND LINE ARGUMENTS:
+D:\2021.1.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Maze/Desktop/GI491/GameDesign_Game
+D:/_AAWork/Hero/hero/GameDesign_Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62901
-Successfully changed project path to: C:/Users/Maze/Desktop/GI491/GameDesign_Game
-C:/Users/Maze/Desktop/GI491/GameDesign_Game
+57102
+Successfully changed project path to: D:/_AAWork/Hero/hero/GameDesign_Game
+D:/_AAWork/Hero/hero/GameDesign_Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 103.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.20f1 (41c4e627c95f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Maze/Desktop/GI491/GameDesign_Game/Assets
-GfxDevice: creating device client; threaded=0
+Initialize engine version: 2021.1.5f1 (3737af19df53)
+[Subsystems] Discovering subsystems at path D:/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/_AAWork/Hero/hero/GameDesign_Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1e89)
-    Vendor:   
-    VRAM:     5967 MB
-    Driver:   30.0.14.9649
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4021 MB
+    Driver:   27.21.14.6140
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Mono path[0] = 'D:/2021.1.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
-Registered in 0.003374 seconds.
+Register platform support module: D:/2021.1.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/2021.1.5f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: D:/2021.1.5f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.002287 seconds.
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 50.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 87.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.910 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1910ms)
-		BeginReloadAssembly (51ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (149ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (169ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
+- Completed reload, in  2.417 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003706 seconds.
+Registered in 0.003185 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001BD61D8D7D0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66BB4220 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD665F9220 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD665F9220 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66638A20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD61FDF6D0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.76 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 73.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.082 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1082ms)
-		BeginReloadAssembly (134ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (889ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (296ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (343ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+- Completed reload, in  1.719 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2818 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.2 MB.
-System memory in use after: 126.4 MB.
+Unloading 2837 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.6 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3259.
-Total: 3.377300 ms (FindLiveObjects: 0.234600 ms CreateObjectMapping: 0.115600 ms MarkObjects: 2.953600 ms  DeleteObjects: 0.072400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Prefeb/Elements brown_1.prefab
-  artifactKey: Guid(03f910d6bd11dc34e997f822702da3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_1.prefab using Guid(03f910d6bd11dc34e997f822702da3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4d9fd3bdbc3e0e60ee5c5c3c0340ac') in 0.204744 seconds 
-  Import took 0.208994 seconds .
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3294.
+Total: 4.742300 ms (FindLiveObjects: 0.331400 ms CreateObjectMapping: 0.179900 ms MarkObjects: 4.118500 ms  DeleteObjects: 0.110900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Prefeb/Elements brown_2.prefab
-  artifactKey: Guid(76f541b59263707409bc0d5d23683a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_2.prefab using Guid(76f541b59263707409bc0d5d23683a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1066058226c9b240e5a0e72039333e') in 0.017917 seconds 
-  Import took 0.022199 seconds .
-
+  path: Assets/Prefeb/FloatingText.prefab
+  artifactKey: Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefeb/FloatingText.prefab using Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d53d2a4fe1f9d49515c1c886403d82') in 0.171724 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Prefeb/Elements+tilemap_9.prefab
-  artifactKey: Guid(68ca47e4b584c1041b8a25e5604d50b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_9.prefab using Guid(68ca47e4b584c1041b8a25e5604d50b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da9f3ca0930be1e7299192447cb9b7f') in 0.021346 seconds 
-  Import took 0.026108 seconds .
-
+  Time since last request: 466.273300 seconds.
+  path: Assets/Script/EnemyAggro.cs
+  artifactKey: Guid(c9ecd034643e27045968c5f61c4fc1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyAggro.cs using Guid(c9ecd034643e27045968c5f61c4fc1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b1e9096c8901d87940a6f5238dd712') in 0.037762 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Prefeb/Elements brown_7.prefab
-  artifactKey: Guid(10ddad47252310240876496cf663be1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_7.prefab using Guid(10ddad47252310240876496cf663be1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64f005a808230c76a3ab507976e9692') in 0.016556 seconds 
-  Import took 0.020649 seconds .
-
+  Time since last request: 44.046742 seconds.
+  path: Assets/Script/EnemyAggro1.cs
+  artifactKey: Guid(75d66449dcd43fd49be8c1df43fc4a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyAggro1.cs using Guid(75d66449dcd43fd49be8c1df43fc4a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c736cf17acce56d129957059620e9b57') in 0.012002 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Prefeb/Elements+tilemap_16.prefab
-  artifactKey: Guid(2e5616ea41d71d3488e2b3503f7c9467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_16.prefab using Guid(2e5616ea41d71d3488e2b3503f7c9467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd75346d6ef313c9b0c393e872fc3419') in 0.030508 seconds 
-  Import took 0.034892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Prefeb/Elements+tilemap_14.prefab
-  artifactKey: Guid(291e64eee129de64b9a7d7b225c7c5a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_14.prefab using Guid(291e64eee129de64b9a7d7b225c7c5a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f53adddd11c1498f580bf3816dff274') in 0.021633 seconds 
-  Import took 0.025810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Prefeb/Elements+tilemap_7.prefab
-  artifactKey: Guid(3f6bfb67c99a41f4fbbc050efcbae4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_7.prefab using Guid(3f6bfb67c99a41f4fbbc050efcbae4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbaacf4dc91962fdf72e7c0bd6bdbfe') in 0.014031 seconds 
-  Import took 0.018655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Prefeb/Elements brown_25.prefab
-  artifactKey: Guid(b57d13d355c4d5b4cac6e4549928ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_25.prefab using Guid(b57d13d355c4d5b4cac6e4549928ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd382b735f6be72d6829e37334a247cc6') in 0.017041 seconds 
-  Import took 0.021608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Prefeb/Elements+tilemap_17.prefab
-  artifactKey: Guid(c162694f701f2544bb44c50095463f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_17.prefab using Guid(c162694f701f2544bb44c50095463f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134fcf829d6fd0ff59b41fd1738f31dd') in 0.016018 seconds 
-  Import took 0.020524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Prefeb/Fixgap.mat
-  artifactKey: Guid(635cd3964115c1e49959c543cacd9f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Fixgap.mat using Guid(635cd3964115c1e49959c543cacd9f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6791abf6ed178550e4f0bbc031aabb10') in 0.033540 seconds 
-  Import took 0.037620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Prefeb/Elements+tilemap_19.prefab
-  artifactKey: Guid(2314af24df6ebb64da9eae17f0699c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_19.prefab using Guid(2314af24df6ebb64da9eae17f0699c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419438783b50791f7287d043c89d6b09') in 0.011905 seconds 
-  Import took 0.016146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Prefeb/Ent_Bullet.prefab
-  artifactKey: Guid(a7a9dd958d9ec3c42b2f633fa94bc2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Ent_Bullet.prefab using Guid(a7a9dd958d9ec3c42b2f633fa94bc2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4857170a8be187159f6c61bb5fe1508') in 0.013193 seconds 
-  Import took 0.017663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Prefeb/stone normal color_7.prefab
-  artifactKey: Guid(d4245a0c51ac87440b21c7e95b73940f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/stone normal color_7.prefab using Guid(d4245a0c51ac87440b21c7e95b73940f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca11526b34d2a3167937266db3f82ee') in 0.012772 seconds 
-  Import took 0.017265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Prefeb/Medium_Stone.prefab
-  artifactKey: Guid(a5e3d3bc98b97e4428e0a956d4c46285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Medium_Stone.prefab using Guid(a5e3d3bc98b97e4428e0a956d4c46285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc6eda5e81a391dfeaeaaa70190d5bf') in 0.013736 seconds 
-  Import took 0.017834 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Prefeb/Elements+tilemap_3.prefab
-  artifactKey: Guid(80f93be5d13378f468213a96fc979ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_3.prefab using Guid(80f93be5d13378f468213a96fc979ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a3268aef53fb03566146760e397db24') in 0.012617 seconds 
-  Import took 0.016988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Prefeb/Player.prefab
-  artifactKey: Guid(a6ece6efbbcc93f44beea95b04f90b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Player.prefab using Guid(a6ece6efbbcc93f44beea95b04f90b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a0c4c3f2be220ac7870dff3edcf6be') in 0.024052 seconds 
-  Import took 0.029190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefeb/Elements brown_0.prefab
-  artifactKey: Guid(458ff9a0b3b68b04f890acc349b32cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_0.prefab using Guid(458ff9a0b3b68b04f890acc349b32cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b1a4d6d8a64b8e40f149fc2a0492e6') in 0.011857 seconds 
-  Import took 0.016263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Prefeb/Elements brown_19.prefab
-  artifactKey: Guid(8de27c29e137ccf4691aec8b521a44f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_19.prefab using Guid(8de27c29e137ccf4691aec8b521a44f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a7abcb1ab7828d96552038b2ae1818') in 0.011505 seconds 
-  Import took 0.016765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Prefeb/range_tree.prefab
-  artifactKey: Guid(f483f2c50a553604b8c165f27e231c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/range_tree.prefab using Guid(f483f2c50a553604b8c165f27e231c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a70e011583e119087317e40cc72ff25') in 0.018659 seconds 
-  Import took 0.023301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefeb/stone normal color_8.prefab
-  artifactKey: Guid(32fe4e527ebf7654bb7011fad7b01b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/stone normal color_8.prefab using Guid(32fe4e527ebf7654bb7011fad7b01b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7364609f835a8e9b852dfe1731908d29') in 0.011910 seconds 
-  Import took 0.016802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Prefeb/Elements+tilemap_0.prefab
-  artifactKey: Guid(915c568990aa5534ab35ffa9a5a09cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_0.prefab using Guid(915c568990aa5534ab35ffa9a5a09cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0598168b81c191700aa6ab05ef0858') in 0.012179 seconds 
-  Import took 0.016604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Prefeb/Elements+tilemap_6.prefab
-  artifactKey: Guid(6754ab9e60cde1b42ac71db953ed4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_6.prefab using Guid(6754ab9e60cde1b42ac71db953ed4d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca509898bfe09e80c49f0739ae42ff1e') in 0.012697 seconds 
-  Import took 0.017210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Prefeb/Elements+tilemap_5.prefab
-  artifactKey: Guid(061eeeb10f4a5b4408dfa4b3ccad091e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_5.prefab using Guid(061eeeb10f4a5b4408dfa4b3ccad091e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2e25caab1e50474c1593edbabb3174') in 0.012474 seconds 
-  Import took 0.016710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Prefeb/Elements+tilemap_18.prefab
-  artifactKey: Guid(f3910654086804f42a6b57a29dc83e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_18.prefab using Guid(f3910654086804f42a6b57a29dc83e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265a26821d7eda830955a083dc69715c') in 0.011971 seconds 
-  Import took 0.016034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Prefeb/Elements brown_24.prefab
-  artifactKey: Guid(208422cd6c40727489087f67efa78217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_24.prefab using Guid(208422cd6c40727489087f67efa78217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b97677165bbac3d8f2a8723d347418') in 0.013424 seconds 
-  Import took 0.017831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Prefeb/Elements brown_1 1.prefab
-  artifactKey: Guid(c5d3e4121ead0884b8d5868ed7ee6c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_1 1.prefab using Guid(c5d3e4121ead0884b8d5868ed7ee6c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a550f965a2ad92a19080e5290cd978') in 0.012337 seconds 
-  Import took 0.016565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Prefeb/Ent_thorn-Sheet_0.prefab
-  artifactKey: Guid(12e2bcf4825e043469ea174fb6915a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Ent_thorn-Sheet_0.prefab using Guid(12e2bcf4825e043469ea174fb6915a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c114b647f205a4aaaf4e1f1b907ac4a') in 0.013435 seconds 
-  Import took 0.017848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Prefeb/Elements+tilemap_10.prefab
-  artifactKey: Guid(66f771471614af34bb60365ec92f34cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_10.prefab using Guid(66f771471614af34bb60365ec92f34cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9871f167ffd33ef803d7e6eeb2c163') in 0.013043 seconds 
-  Import took 0.017493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Prefeb/stone normal color_3.prefab
-  artifactKey: Guid(b25d6e4ef3758ee4aae8f70ba5479f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/stone normal color_3.prefab using Guid(b25d6e4ef3758ee4aae8f70ba5479f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4bf9a02d9c5faf2c305c0f9acc914b') in 0.012192 seconds 
-  Import took 0.016776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Prefeb/Elements+tilemap_12.prefab
-  artifactKey: Guid(ecedc936d0bdc3f46be522fd703fff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_12.prefab using Guid(ecedc936d0bdc3f46be522fd703fff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03883d0037ea6b980894099666c9f32c') in 0.015169 seconds 
-  Import took 0.019619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Prefeb/Elements+tilemap_11.prefab
-  artifactKey: Guid(edfc14308a7adde43b7d9cc4f4c2d78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_11.prefab using Guid(edfc14308a7adde43b7d9cc4f4c2d78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9dcd54b934cf84c4f724705e2d0c0c4') in 0.013349 seconds 
-  Import took 0.017727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Prefeb/Elements brown_6.prefab
-  artifactKey: Guid(e67c10a4aad16d64aa27f250d2299e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_6.prefab using Guid(e67c10a4aad16d64aa27f250d2299e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653214a53f4e3a8020f901499c2493fa') in 0.013370 seconds 
-  Import took 0.018117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Prefeb/Elements+tilemap_13.prefab
-  artifactKey: Guid(fb89cd9b0f020804f88beded26eb98dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_13.prefab using Guid(fb89cd9b0f020804f88beded26eb98dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fbff80eef596fe21eaaedae0cafcf0') in 0.018749 seconds 
-  Import took 0.024931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Prefeb/Elements brown_15.prefab
-  artifactKey: Guid(178fb229617a2da4a95eeba936c8889a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_15.prefab using Guid(178fb229617a2da4a95eeba936c8889a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f2b3788c55bf181bee5024af508b2a') in 0.019166 seconds 
-  Import took 0.024722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Prefeb/Elements brown_21.prefab
-  artifactKey: Guid(59b1a8235a2942d46b42cc676757d523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_21.prefab using Guid(59b1a8235a2942d46b42cc676757d523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26657eac3cde6d1f96ed2aa9c82e401') in 0.018167 seconds 
-  Import took 0.023375 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Prefeb/Boss_Ent.prefab
-  artifactKey: Guid(afdaa5c5888d69a40952d1ab651dba49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Boss_Ent.prefab using Guid(afdaa5c5888d69a40952d1ab651dba49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cb95b38141ab0310fc3f0e95b1d15d') in 0.027740 seconds 
-  Import took 0.032161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Prefeb/Elements+tilemap_100.prefab
-  artifactKey: Guid(8a79228cacf238e4ca0913e1685e675e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_100.prefab using Guid(8a79228cacf238e4ca0913e1685e675e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327cbfa08f07d33ecc8424ededaeff25') in 0.013001 seconds 
-  Import took 0.017798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Prefeb/Elements brown_22.prefab
-  artifactKey: Guid(b57052ef9ff5bb84db4eca05bbc4d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_22.prefab using Guid(b57052ef9ff5bb84db4eca05bbc4d02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a879553e512444ab2d609f936917cb') in 0.012073 seconds 
-  Import took 0.016425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Prefeb/Slime.prefab
-  artifactKey: Guid(cb6d5becc71681c4dbc1b180eeab50eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Slime.prefab using Guid(cb6d5becc71681c4dbc1b180eeab50eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bec3e8b111ea4ae8e6b3b427150bbd') in 0.018607 seconds 
-  Import took 0.023475 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Prefeb/Elements brown_16.prefab
-  artifactKey: Guid(2a4685b5e2e717f4aba8b03cdf0c7420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_16.prefab using Guid(2a4685b5e2e717f4aba8b03cdf0c7420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de08bde5e602a5587fed34c9b60dd761') in 0.012046 seconds 
-  Import took 0.016139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Prefeb/Tree_bullet.prefab
-  artifactKey: Guid(be113c59be0167e4d865d74c66e6e674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Tree_bullet.prefab using Guid(be113c59be0167e4d865d74c66e6e674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a754553a59af0a23428493782435cbe') in 0.011503 seconds 
-  Import took 0.016357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Prefeb/Elements+tilemap_1.prefab
-  artifactKey: Guid(1bd85ab1b185dfc4bbd7a9be6053ee38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_1.prefab using Guid(1bd85ab1b185dfc4bbd7a9be6053ee38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6342d39d8ad2f5320e480e3a2d5320') in 0.011475 seconds 
-  Import took 0.016626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Prefeb/Elements brown_20.prefab
-  artifactKey: Guid(c9e184825d9fd034aad5f798190cb0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_20.prefab using Guid(c9e184825d9fd034aad5f798190cb0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a387059b655fc301582d7ebc85e5c4b7') in 0.011916 seconds 
-  Import took 0.016580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Prefeb/stone normal color_2.prefab
-  artifactKey: Guid(2227dda007a4a8f438ff92c0d4916820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/stone normal color_2.prefab using Guid(2227dda007a4a8f438ff92c0d4916820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4beaed2965d09b5b00a75f3fa38674') in 0.012991 seconds 
-  Import took 0.017462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Prefeb/Elements+tilemap_8.prefab
-  artifactKey: Guid(744c18a36e636d5408e80ebffacede01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_8.prefab using Guid(744c18a36e636d5408e80ebffacede01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778d801b127544a133a3c2ae15011539') in 0.011906 seconds 
-  Import took 0.016288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Prefeb/Elements+tilemap_2.prefab
-  artifactKey: Guid(c7d3d6270015b8242bd2b94a8cbdcf46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements+tilemap_2.prefab using Guid(c7d3d6270015b8242bd2b94a8cbdcf46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9705feadf6d829822280ec0412002c') in 0.012647 seconds 
-  Import took 0.017087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 271.554783 seconds.
-  path: Assets/Prefeb/Elements brown_3.prefab
-  artifactKey: Guid(9c00d24a1606d9b4ba292364d3cac6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_3.prefab using Guid(9c00d24a1606d9b4ba292364d3cac6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b1f73c0c7f8515cd1018d354fa0fd0') in 0.015618 seconds 
-  Import took 0.022003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.683412 seconds.
-  path: Assets/Prefeb/Elements brown_8.prefab
-  artifactKey: Guid(c2337e02ad9b97242a69e90fffe0b272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_8.prefab using Guid(c2337e02ad9b97242a69e90fffe0b272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9924d70b8ebfb722a35fb49f244f016') in 0.011691 seconds 
-  Import took 0.016439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.745952 seconds.
-  path: Assets/Prefeb/Elements brown_11.prefab
-  artifactKey: Guid(bdfcbfa0a58bffd499e80930fdad28b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefeb/Elements brown_11.prefab using Guid(bdfcbfa0a58bffd499e80930fdad28b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf0cda193e23165e15dcc682e67d172') in 0.017978 seconds 
-  Import took 0.023014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7927.838776 seconds.
-  path: Assets/Animation/PlayerAnimation/Main.controller
-  artifactKey: Guid(33bc71321a1142a42b9fc8d550279a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/PlayerAnimation/Main.controller using Guid(33bc71321a1142a42b9fc8d550279a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11de2add11ed6c98a48313959311689a') in 0.037987 seconds 
-  Import took 0.108792 seconds .
-
+  Time since last request: 44.128417 seconds.
+  path: Assets/Script/EnemyAggro1.cs
+  artifactKey: Guid(75d66449dcd43fd49be8c1df43fc4a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyAggro1.cs using Guid(75d66449dcd43fd49be8c1df43fc4a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ffd08d486160b481f0780111db928e') in 0.004962 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003387 seconds.
+Registered in 0.051038 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001BD6ACF4E20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6ACF4E20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66102030 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66950230 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD61C92630 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6198DC00 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1155ms)
-		BeginReloadAssembly (192ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (87ms)
-		EndReloadAssembly (903ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (291ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (178ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+- Completed reload, in  1.756 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2708 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 124.6 MB.
-System memory in use after: 124.8 MB.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.2 MB.
+System memory in use after: 122.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3339.
-Total: 3.150300 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.123100 ms MarkObjects: 2.760800 ms  DeleteObjects: 0.016200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3297.
+Total: 3.749900 ms (FindLiveObjects: 0.241300 ms CreateObjectMapping: 0.139300 ms MarkObjects: 3.337600 ms  DeleteObjects: 0.024400 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003590 seconds.
+Registered in 0.004059 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001BD691F6010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD691F6010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD61F52870 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD61F52870 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6AEB9540 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD67E30700 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.033 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1034ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (864ms)
-			LoadAssemblies (83ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (318ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (292ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+- Completed reload, in  1.975 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2708 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 124.6 MB.
-System memory in use after: 124.8 MB.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.3 MB.
+System memory in use after: 122.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3341.
-Total: 3.010600 ms (FindLiveObjects: 0.244300 ms CreateObjectMapping: 0.123700 ms MarkObjects: 2.628000 ms  DeleteObjects: 0.013800 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3299.
+Total: 7.707200 ms (FindLiveObjects: 0.553200 ms CreateObjectMapping: 0.525300 ms MarkObjects: 6.455400 ms  DeleteObjects: 0.170300 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006764 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD6830A420 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66F29A30 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD698BE860 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6AEB9540 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6ED2ACB0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.523 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.3 MB.
+System memory in use after: 122.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3301.
+Total: 5.505000 ms (FindLiveObjects: 0.470200 ms CreateObjectMapping: 0.316700 ms MarkObjects: 4.688300 ms  DeleteObjects: 0.028000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004037 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD66F29A30 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66F29A30 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD666A4020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66848010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6D805D80 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.898 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3304.
+Total: 6.229400 ms (FindLiveObjects: 0.304200 ms CreateObjectMapping: 0.189800 ms MarkObjects: 5.701600 ms  DeleteObjects: 0.032300 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 1962.405256 seconds.
+  Time since last request: 1418.818212 seconds.
+  path: Assets/Prefeb/FloatingText.prefab
+  artifactKey: Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefeb/FloatingText.prefab using Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43074ffd69faa16a64055c340331a50') in 0.058384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.855632 seconds.
+  path: Assets/New 2D Renderer Data.asset
+  artifactKey: Guid(64d66f88b8962024cbde908363adbb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New 2D Renderer Data.asset using Guid(64d66f88b8962024cbde908363adbb27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e1593909ba0a14cadb527d1227be6f') in 0.016285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
   path: Assets/UniversalRenderPipelineAsset.asset
   artifactKey: Guid(1cfa644d87365c2439057c048102d373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineAsset.asset using Guid(1cfa644d87365c2439057c048102d373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a8dd16bdf58f9acea1a9ce7115e7d2') in 0.041597 seconds 
-  Import took 0.045706 seconds .
+Start importing Assets/UniversalRenderPipelineAsset.asset using Guid(1cfa644d87365c2439057c048102d373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e67903c252c2978d2ca0a471a4250aa') in 0.077584 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004304 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD6D4AEE10 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD915E7020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6D7DCFB0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6D592BB0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD69F09C30 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.036 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2730 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3306.
+Total: 10.833100 ms (FindLiveObjects: 0.630300 ms CreateObjectMapping: 0.454600 ms MarkObjects: 9.098400 ms  DeleteObjects: 0.646300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/water.prefab
-  artifactKey: Guid(9e87787085424f4488336e209735546d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/water.prefab using Guid(9e87787085424f4488336e209735546d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4373109b61d6e26d70868c7b34f0ef') in 0.142346 seconds 
-  Import took 0.146172 seconds .
+  Time since last request: 1892.681758 seconds.
+  path: Assets/Prefeb/FloatingText.prefab
+  artifactKey: Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefeb/FloatingText.prefab using Guid(0e446e83ea7098d479aff322e73bcd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4bc638793258acc261cd5b941d25a1') in 0.080559 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004257 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD91669080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD91669080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6EBAC020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6D88DC20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.022 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3308.
+Total: 6.720700 ms (FindLiveObjects: 1.298400 ms CreateObjectMapping: 0.741100 ms MarkObjects: 4.652400 ms  DeleteObjects: 0.025400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003822 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD6ACF4E20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6ACF4E20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E39D420 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6ED2A450 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.776 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3310.
+Total: 3.929900 ms (FindLiveObjects: 0.268400 ms CreateObjectMapping: 0.162000 ms MarkObjects: 3.478700 ms  DeleteObjects: 0.019800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004239 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD6D6D0020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6D6D0020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E39D420 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66E19020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.721 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3312.
+Total: 6.204800 ms (FindLiveObjects: 0.489600 ms CreateObjectMapping: 0.329900 ms MarkObjects: 5.353700 ms  DeleteObjects: 0.026800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004764 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD8FD96020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6DDAA060 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E39D420 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD94549020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.568 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3314.
+Total: 3.705800 ms (FindLiveObjects: 0.284700 ms CreateObjectMapping: 0.166900 ms MarkObjects: 3.233400 ms  DeleteObjects: 0.019400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002346 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD94A0B010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD94A0B010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6A306020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6E5BD080 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD67576030 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.878 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3316.
+Total: 4.364200 ms (FindLiveObjects: 0.319300 ms CreateObjectMapping: 0.156400 ms MarkObjects: 3.861700 ms  DeleteObjects: 0.025400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003697 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD68146010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD69446050 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6EBAC020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD912F4D50 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD906CE8F0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.235 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3318.
+Total: 6.708300 ms (FindLiveObjects: 0.380000 ms CreateObjectMapping: 0.237800 ms MarkObjects: 6.055000 ms  DeleteObjects: 0.033900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004673 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD68146010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD69446050 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6EBAC020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6AE30010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD906CE8F0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.479 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3320.
+Total: 3.366700 ms (FindLiveObjects: 0.306900 ms CreateObjectMapping: 0.177400 ms MarkObjects: 2.862800 ms  DeleteObjects: 0.018300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003973 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD8FB49F00 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD8FB49F00 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6A22DF80 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD69288020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD906CE8F0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.704 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3322.
+Total: 3.583900 ms (FindLiveObjects: 0.269600 ms CreateObjectMapping: 0.174000 ms MarkObjects: 3.120100 ms  DeleteObjects: 0.019200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.342858 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BD67FF8020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD67FF8020 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD66004A20 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD6DF3DF30 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD676F8010 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BD906CE8F0 doesn't match image D:\_AAWork\Hero\hero\GameDesign_Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.960 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3324.
+Total: 3.042700 ms (FindLiveObjects: 0.229100 ms CreateObjectMapping: 0.138500 ms MarkObjects: 2.651800 ms  DeleteObjects: 0.022300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
