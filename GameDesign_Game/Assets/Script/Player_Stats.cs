@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player_Stats : MonoBehaviour
@@ -69,6 +70,7 @@ public class Player_Stats : MonoBehaviour
         if (Health <= 0)
         {
             Destroy(player.gameObject);
+            
         }
     }
 }
