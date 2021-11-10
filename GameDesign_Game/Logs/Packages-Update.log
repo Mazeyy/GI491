@@ -83,3 +83,12 @@ Update Mode: updateDependencies
 
 The following packages were updated:
   com.unity.render-pipelines.universal from version 10.6.0 to 11.0.0
+
+=== Wed Nov 10 14:21:30 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.rider from version 3.0.5 to 3.0.7
+  com.unity.timeline from version 1.5.4 to 1.5.6

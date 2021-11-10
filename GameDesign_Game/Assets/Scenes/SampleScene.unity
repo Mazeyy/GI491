@@ -35912,7 +35912,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 9144336566263935341, guid: c162694f701f2544bb44c50095463f43, type: 3}
       propertyPath: m_RootOrder
-      value: 134
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 9144336566263935341, guid: c162694f701f2544bb44c50095463f43, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37930,7 +37930,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 1492914212687193821, guid: 915c568990aa5534ab35ffa9a5a09cc9, type: 3}
       propertyPath: m_RootOrder
-      value: 135
+      value: 134
       objectReference: {fileID: 0}
     - target: {fileID: 1492914212687193821, guid: 915c568990aa5534ab35ffa9a5a09cc9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46636,8 +46636,8 @@ Transform:
   - {fileID: 2004229345}
   - {fileID: 245484702}
   - {fileID: 1726371753}
-  - {fileID: 412729656}
   - {fileID: 599500387}
+  - {fileID: 412729656}
   - {fileID: 1948104881}
   - {fileID: 1575691953}
   - {fileID: 631195959}
@@ -60392,7 +60392,7 @@ PrefabInstance:
       objectReference: {fileID: 1870561093}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: DashSpeed
-      value: 10
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: SlideAttack
@@ -60413,6 +60413,10 @@ PrefabInstance:
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: knockbackPower
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: StarttimeBTWdash
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: movementBaseSpeed

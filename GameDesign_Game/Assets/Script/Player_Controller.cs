@@ -118,7 +118,7 @@ public class Player_Controller : MonoBehaviour
     {
         Debug.Log("dash");
         IsDashing = true;        
-        rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Impulse);        
+        rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Force);        
         yield return new WaitForSeconds(0.2f);
         timeBTWdash = Dashtime;
         IsDashing = false;
