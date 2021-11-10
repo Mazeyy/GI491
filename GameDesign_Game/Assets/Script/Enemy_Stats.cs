@@ -15,6 +15,8 @@ public class Enemy_Stats : MonoBehaviour
     public GameObject PotionPrefab;
     public GameObject Player;
     private Transform PlayerPos;
+    //private float HealCooldown;
+    public static Enemy_Stats EnemyStats;
 
     public Rigidbody2D rb;
     //public float health;
@@ -106,6 +108,28 @@ public class Enemy_Stats : MonoBehaviour
             GameObject Potion = Instantiate(PotionPrefab, position, Quaternion.identity);
             Destroy(Potion, 5.0f);
         }
-        
+
     }
+
+
+
+    /*void Heal()
+    {
+        if (Health <= 20)
+        {
+            Health += 5;
+        }
+    }*/
+
+    /*IEnumerable Heal() //Heal every seconds
+    {
+        if (Health <= 20)
+        {
+            Health += 10;
+            HealCooldown = 0.2f;
+            yield return new WaitForSeconds(HealCooldown);
+            HealCooldown = 0;
+            print("heal");
+        }
+    }*/
 }
