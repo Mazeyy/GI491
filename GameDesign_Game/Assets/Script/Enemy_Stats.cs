@@ -38,11 +38,22 @@ public class Enemy_Stats : MonoBehaviour
 
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
-
     }
     private void Update()
     {
         //PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
+        
+        //filp character with code
+        /*Vector3 characterScale = transform.localScale;
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            characterScale.x = -10;
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            characterScale.x = 10;
+        }
+        transform.localScale = characterScale;*/
     }
 
     public void DealDMG(float damage)
@@ -68,10 +79,8 @@ public class Enemy_Stats : MonoBehaviour
                 Vector2 direction = (this.transform.position - PlayerPos.transform.position);
                 direction = direction.normalized * 1;
                 transform.position = new Vector2(transform.position.x + direction.x, transform.position.y + direction.y/* * knockbackPower*/);
-                
             }
         }
-        
     }
 
     IEnumerator Knock()
@@ -110,7 +119,6 @@ public class Enemy_Stats : MonoBehaviour
         }
 
     }
-
 
 
     /*void Heal()
