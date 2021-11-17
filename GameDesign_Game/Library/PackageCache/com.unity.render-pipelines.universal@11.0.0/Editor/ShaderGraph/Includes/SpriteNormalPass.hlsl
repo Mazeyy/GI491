@@ -2,7 +2,6 @@ PackedVaryings vert(Attributes input)
 {
     Varyings output = (Varyings)0;
     output = BuildVaryings(input);
-    output.normalWS = -GetViewForwardDir();
     PackedVaryings packedOutput = PackVaryings(output);
     return packedOutput;
 }

@@ -1,0 +1,1452 @@
+fileFormatVersion: 2
+guid: 88e58a6ff6dd2dc44a92f40f0b1e28c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8511434474652857978
+    second: 1cyclop-Sheet_0
+  - first:
+      213: 885147597361673599
+    second: 1cyclop-Sheet_1
+  - first:
+      213: 7990269786407258884
+    second: 1cyclop-Sheet_2
+  - first:
+      213: -8912636474249379594
+    second: 1cyclop-Sheet_3
+  - first:
+      213: -291202901811987209
+    second: 1cyclop-Sheet_4
+  - first:
+      213: -1245349676491654700
+    second: 1cyclop-Sheet_5
+  - first:
+      213: -3481648137649734749
+    second: 1cyclop-Sheet_6
+  - first:
+      213: -2171743274310741284
+    second: 1cyclop-Sheet_7
+  - first:
+      213: -3418452136734962802
+    second: 1cyclop-Sheet_37
+  - first:
+      213: 2842027622527566251
+    second: 1cyclop-Sheet_37
+  - first:
+      213: 6592219949772747269
+    second: 1cyclop-Sheet_9
+  - first:
+      213: -5353233346841039353
+    second: 1cyclop-Sheet_10
+  - first:
+      213: 584749134433825269
+    second: 1cyclop-Sheet_11
+  - first:
+      213: -8032720365301920740
+    second: 1cyclop-Sheet_12
+  - first:
+      213: 7823759348663230128
+    second: 1cyclop-Sheet_13
+  - first:
+      213: -4903990290679811760
+    second: 1cyclop-Sheet_14
+  - first:
+      213: -7281742009240827989
+    second: 1cyclop-Sheet_15
+  - first:
+      213: 6369952057752248350
+    second: 1cyclop-Sheet_14
+  - first:
+      213: -765533710921783335
+    second: 1cyclop-Sheet_15
+  - first:
+      213: -8517786232776840385
+    second: 1cyclop-Sheet_16
+  - first:
+      213: 4436972388365661979
+    second: 1cyclop-Sheet_17
+  - first:
+      213: 8547693431210190604
+    second: 1cyclop-Sheet_18
+  - first:
+      213: 4772905729966334608
+    second: 1cyclop-Sheet_19
+  - first:
+      213: 3548788243510751146
+    second: 1cyclop-Sheet_20
+  - first:
+      213: -428005369798816945
+    second: 1cyclop-Sheet_21
+  - first:
+      213: -8025701943355320744
+    second: 1cyclop-Sheet_22
+  - first:
+      213: 1970083370123066383
+    second: 1cyclop-Sheet_23
+  - first:
+      213: 1443554176769014785
+    second: 1cyclop-Sheet_24
+  - first:
+      213: 5738882363316961998
+    second: 1cyclop-Sheet_25
+  - first:
+      213: 722103188373117600
+    second: 1cyclop-Sheet_26
+  - first:
+      213: 6860793531351289949
+    second: 1cyclop-Sheet_27
+  - first:
+      213: 3884490491869854076
+    second: 1cyclop-Sheet_28
+  - first:
+      213: -754817983771336392
+    second: 1cyclop-Sheet_29
+  - first:
+      213: -192271071846291449
+    second: 1cyclop-Sheet_30
+  - first:
+      213: 7376032771456985116
+    second: 1cyclop-Sheet_31
+  - first:
+      213: 788101349757962227
+    second: 1cyclop-Sheet_32
+  - first:
+      213: 5871312607410931418
+    second: 1cyclop-Sheet_33
+  - first:
+      213: -8421783097285922130
+    second: 1cyclop-Sheet_34
+  - first:
+      213: -7721704497363640050
+    second: 1cyclop-Sheet_35
+  - first:
+      213: -2942078425860692355
+    second: 1cyclop-Sheet_36
+  - first:
+      213: -6207220213297367624
+    second: 1cyclop-Sheet_51
+  - first:
+      213: -5322842677180124547
+    second: 1cyclop-Sheet_37
+  - first:
+      213: 2614775568856799435
+    second: 1cyclop-Sheet_39
+  - first:
+      213: 6712281449788906090
+    second: 1cyclop-Sheet_40
+  - first:
+      213: 1509515839712417431
+    second: 1cyclop-Sheet_41
+  - first:
+      213: 9181328087739687297
+    second: 1cyclop-Sheet_44
+  - first:
+      213: 6838094366557726686
+    second: 1cyclop-Sheet_45
+  - first:
+      213: 3723810624027632533
+    second: 1cyclop-Sheet_46
+  - first:
+      213: -348461316963347349
+    second: 1cyclop-Sheet_47
+  - first:
+      213: -1754332218409200975
+    second: 1cyclop-Sheet_51
+  - first:
+      213: 3996191087735690578
+    second: 1cyclop-Sheet_51
+  - first:
+      213: -2935591691706456684
+    second: 1cyclop-Sheet_51
+  - first:
+      213: -2703995987252791056
+    second: 1cyclop-Sheet_52
+  - first:
+      213: 7390866668654052711
+    second: 1cyclop-Sheet_53
+  - first:
+      213: 4159480741678415127
+    second: 1cyclop-Sheet_42
+  - first:
+      213: 3810667610133927068
+    second: 1cyclop-Sheet_43
+  - first:
+      213: 8951807856080954029
+    second: 1cyclop-Sheet_44
+  - first:
+      213: 7833641493623402681
+    second: 1cyclop-Sheet_45
+  - first:
+      213: 331689815804320788
+    second: 1cyclop-Sheet_46
+  - first:
+      213: 7624618947101852534
+    second: 1cyclop-Sheet_47
+  - first:
+      213: 3990879692715781449
+    second: 1cyclop-Sheet_60
+  - first:
+      213: 8146494761147733470
+    second: 1cyclop-Sheet_61
+  - first:
+      213: 4163928029917041938
+    second: 1cyclop-Sheet_62
+  - first:
+      213: -2420588830031865098
+    second: 1cyclop-Sheet_63
+  - first:
+      213: 5995189918549570153
+    second: 1cyclop-Sheet_51
+  - first:
+      213: 2247729737733970630
+    second: 1cyclop-Sheet_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7672b62f80be1670800000000000000
+      internalID: 8511434474652857978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f757882dc0da84c00800000000000000
+      internalID: 885147597361673599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b4756590423ee60800000000000000
+      internalID: 7990269786407258884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f00d2c0954ff4480800000000000000
+      internalID: -8912636474249379594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcfeefe08075fbf0800000000000000
+      internalID: -291202901811987209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9319f3111a7bee0800000000000000
+      internalID: -1245349676491654700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1750
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abbc722773beafc0800000000000000
+      internalID: -3481648137649734749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd25d579ffa6cd1e0800000000000000
+      internalID: -2171743274310741284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba18a92a019e07720800000000000000
+      internalID: 2842027622527566251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502b2730e154c7b50800000000000000
+      internalID: 6592219949772747269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ea3c932ae75b5b0800000000000000
+      internalID: -5353233346841039353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f135a85d327d1800800000000000000
+      internalID: 584749134433825269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c022e036b068090800000000000000
+      internalID: -8032720365301920740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 200
+        height: 250
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be9631fca3939c60800000000000000
+      internalID: 7823759348663230128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e106796a5ad966850800000000000000
+      internalID: 6369952057752248350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7abe855274065f0800000000000000
+      internalID: -765533710921783335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3baf9aec8ebac980800000000000000
+      internalID: -8517786232776840385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1770ce01ea439d30800000000000000
+      internalID: 4436972388365661979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07293853e18f9670800000000000000
+      internalID: 8547693431210190604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092e1153974cc3240800000000000000
+      internalID: 4772905729966334608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf6a8dea14df3130800000000000000
+      internalID: 3548788243510751146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b8e23426b6f0af0800000000000000
+      internalID: -428005369798816945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856d421ca9afe9090800000000000000
+      internalID: -8025701943355320744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cf61e1364275b10800000000000000
+      internalID: 1970083370123066383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c395020e8880410800000000000000
+      internalID: 1443554176769014785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec203418a1b94af40800000000000000
+      internalID: 5738882363316961998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa1822260d650a00800000000000000
+      internalID: 722103188373117600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1000
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50dd71ed5f663f50800000000000000
+      internalID: 6860793531351289949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79f84d758b78e530800000000000000
+      internalID: 3884490491869854076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831ab3ffa095685f0800000000000000
+      internalID: -754817983771336392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708a4069a7ae45df0800000000000000
+      internalID: -192271071846291449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18655ac9beec5660800000000000000
+      internalID: 7376032771456985116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f744578006efea00800000000000000
+      internalID: 788101349757962227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6400a75b71b7150800000000000000
+      internalID: 5871312607410931418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 750
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea232eeb4e0df1b80800000000000000
+      internalID: -8421783097285922130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01aa16cbaef6d490800000000000000
+      internalID: -7721704497363640050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76ab3d6243ab27d0800000000000000
+      internalID: -2942078425860692355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72b36769c67126b0800000000000000
+      internalID: -5322842677180124547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc85415b68c894420800000000000000
+      internalID: 2614775568856799435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a9c175a60d62d50800000000000000
+      internalID: 6712281449788906090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79652e098a0e2f410800000000000000
+      internalID: 1509515839712417431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71df1d952b179b930800000000000000
+      internalID: 4159480741678415127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c949e1b600632e430800000000000000
+      internalID: 3810667610133927068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a14ff0d53b3c70800000000000000
+      internalID: 8951807856080954029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0fe2d1f6fa6bc60800000000000000
+      internalID: 7833641493623402681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c91ae41266a9400800000000000000
+      internalID: 331689815804320788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67308b1198610d960800000000000000
+      internalID: 7624618947101852534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 355
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 200, y: 250}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94de4a99fe3726730800000000000000
+      internalID: 3990879692715781449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 346
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 200, y: 250}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed59ac2c2d92e0170800000000000000
+      internalID: 8146494761147733470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96276209771333350800000000000000
+      internalID: 5995189918549570153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca17b8994a813f10800000000000000
+      internalID: 2247729737733970630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 500
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bcc34b4e73f80d0800000000000000
+      internalID: -3418452136734962802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 250
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b539cf6a168bd9a0800000000000000
+      internalID: -6207220213297367624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1cyclop-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1400
+        height: 2000
+      alignment: 9
+      pivot: {x: 0.485, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495af3ae8eea247d0800000000000000
+      internalID: -2935591691706456684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ce8e07630892e514ca0edd29a0024d6c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,5 +21,6 @@ public class Healing : MonoBehaviour
     {
         if (obj.gameObject.tag == "Enemy")
             health += 10;
+        Debug.Log(health);
     }
 }
