@@ -25,7 +25,7 @@ public class BossTwo : MonoBehaviour
     Rigidbody2D rbBoss;
     Transform player;
     Rigidbody2D rb;
-
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +37,7 @@ public class BossTwo : MonoBehaviour
     void Update()
     {
         FollowPlayer();
+        PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void LookAtPlayer()
@@ -103,11 +104,11 @@ public class BossTwo : MonoBehaviour
         {
             if (Vector2.Distance(player.position, rb.position) >= attackRange)
             {
-                PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
+                anim.SetBool("IsCharge", true);
                 //target = new Vector2(PlayerPos.position.x, PlayerPos.position.y);
                 rbBoss = GetComponent<Rigidbody2D>();
                 Vector2 moveDirection = (PlayerPos.transform.position - transform.position).normalized * speed;
-                this.transform.Rotate(0, 0, Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg);
+                //this.transform.Rotate(0, 0, Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg);
                 rbBoss.velocity = new Vector2(moveDirection.x, moveDirection.y);
             }
          }
