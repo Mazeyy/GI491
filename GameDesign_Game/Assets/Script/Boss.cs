@@ -44,7 +44,9 @@ public class Boss : MonoBehaviour
     public bool canShoot = true;
 
     private float dist;
-    public float howClose;    
+    public float howClose;
+
+    public bool isFlipped = false;
 
     public static Boss thisboss;
 
@@ -54,6 +56,7 @@ public class Boss : MonoBehaviour
     public GameObject player;
 
     public float damage;*/
+
     void Awake()
     {
         thisboss = this;
@@ -97,6 +100,26 @@ public class Boss : MonoBehaviour
         }
         HealthBar.value = Health;
     }
+
+    /*public void LookAtPlayer()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.z *= -1f;
+
+        if (transform.position.x > PlayerPos.position.x && isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = false;
+        }
+        else if (transform.position.x < PlayerPos.position.x && !isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = true;
+        }
+    }*/
+
     public void Attack()
     {
         if(attackRate < Time.time)

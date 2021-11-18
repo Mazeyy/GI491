@@ -323,6 +323,8 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/BluntBehaviour.cs"
+"Assets/BossChargeBehaviour.cs"
+"Assets/BossTwo.cs"
 "Assets/Enemy_Heal.cs"
 "Assets/FloatingText.cs"
 "Assets/Healing.cs"
@@ -357,6 +359,7 @@
 "Assets/Script/Player_Controller.cs"
 "Assets/Script/Player_Stats.cs"
 "Assets/Script/Rotation_cross.cs"
+"Assets/WalkBehaviour.cs"
 -langversion:8.0
 
 /deterministic

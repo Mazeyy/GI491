@@ -618,6 +618,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3729831005973025765, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
   m_PrefabInstance: {fileID: 3729831005905713890}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &75360520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75360519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d368ea2f2e560d4ebf171a4c2976392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlipped: 1
+  PlayerPos: {fileID: 433897339}
+  attackDamage: 0
+  enragedAttackDamage: 0
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 0
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 0
+  health: 800
+  BossCyclop: {fileID: 75360519}
+  IsInvulnerable: 0
 --- !u!61 &75360523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -665,42 +689,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &75360526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75360519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 072b09ca2bac97b45914a557b408c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealt: 500
-  Health: 500
-  AttackDMG: 20
-  TeleportPrefab: {fileID: 0}
-  ThronPrefab: {fileID: 0}
-  BossBulletPf: {fileID: 0}
-  Player: {fileID: 433897334}
-  rb: {fileID: 75360524}
-  knockbackPower: 0.001
-  knockbackDuration: 0.7
-  knockbackResistance: 0
-  StartknockCooldown: 1
-  TimeToSpawn: 0
-  currentTimeToSpawn: 0
-  spawnRadius: 10
-  Idle: 0
-  StartSummon: 0
-  currenAttacking: 0
-  currenShooting: 0
-  fireRate: 0.5
-  attackRate: 0
-  canShoot: 1
-  howClose: 5
-  HealthBar: {fileID: 0}
 --- !u!4 &78244449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5419952886442909014, guid: b57d13d355c4d5b4cac6e4549928ef4c, type: 3}
@@ -60440,6 +60428,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3729831005973025765, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025770, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0
@@ -60450,11 +60442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.88
+      value: 20.3
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60487,22 +60479,6 @@ PrefabInstance:
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7344293567888237127, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 75360524}
-    - target: {fileID: 7344293567888237127, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
-      propertyPath: Range
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7344293567888237127, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 433897339}
-    - target: {fileID: 7344293567888237127, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
-      propertyPath: movementSpeed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
