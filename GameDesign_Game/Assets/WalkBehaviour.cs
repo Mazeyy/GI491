@@ -11,6 +11,8 @@ public class WalkBehaviour : StateMachineBehaviour
     public float speed;
     public float attackRange;
 
+    private int randAnim;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -32,12 +34,30 @@ public class WalkBehaviour : StateMachineBehaviour
         {
             animator.SetTrigger("StateBlunt");
         }
+        else if (Vector2.Distance(player.position, rb.position) > attackRange)
+        {
+            randAnim = Random.Range (1,3);
+            Debug.Log ("rand = " + randAnim);
+
+            if(randAnim == 1)
+            {
+                animator.SetTrigger("Jump");
+            }
+            else
+            {
+                animator.SetTrigger("Charge");
+            }
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("StateBlunt");
+
+        animator.ResetTrigger("Jump");
+
+        animator.ResetTrigger("Charge");
     }
 
 }

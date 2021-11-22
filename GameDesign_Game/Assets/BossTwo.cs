@@ -57,7 +57,29 @@ public class BossTwo : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             isFlipped = true;
         }
+
     }
+
+    /*public void LookAtPlayerTop()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.y *= -1f;
+
+        if (transform.position.x > PlayerPos.position.x && !isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(180f, 0f, 0f);
+            isFlipped = false;
+        }
+        else if (transform.position.x < PlayerPos.position.x && !isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(180f, 0f, 0f);
+            isFlipped = true;
+        }
+    }*/
+
+
 
     //Event Attack
     /*public void Attack()
@@ -76,26 +98,26 @@ public class BossTwo : MonoBehaviour
     //IsCharge
     //public void TakeDamage(float damage)
     //{
-       // if (Vector2.Distance(player.position, rb.position) >= attackRange)
-        //{
-          //  FollowPlayer();
-        //}
+    // if (Vector2.Distance(player.position, rb.position) >= attackRange)
+    //{
+    //  FollowPlayer();
+    //}
 
-        /*if (IsInvulnerable)
+    /*if (IsInvulnerable)
+    {
+        return;
+
+        health -= damage;
+
+        if(health <= 200)
         {
-            return;
-
-            health -= damage;
-
-            if(health <= 200)
-            {
-                GetComponent<Animator>().SetBool("IsCharge", true);
-            }
-            if (health <= 0)
-            {
-                Die();
-            }
-        }*/
+            GetComponent<Animator>().SetBool("IsCharge", true);
+        }
+        if (health <= 0)
+        {
+            Die();
+        }
+    }*/
     //}
 
     void FollowPlayer()

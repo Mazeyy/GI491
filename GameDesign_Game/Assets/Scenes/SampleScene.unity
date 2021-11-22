@@ -632,6 +632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFlipped: 1
   PlayerPos: {fileID: 433897339}
+  isMoving: 0
   attackDamage: 0
   enragedAttackDamage: 0
   attackOffset: {x: 0, y: 0, z: 0}
@@ -642,6 +643,7 @@ MonoBehaviour:
   health: 800
   BossCyclop: {fileID: 75360519}
   IsInvulnerable: 0
+  speed: 0
 --- !u!61 &75360523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60442,7 +60444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.3
+      value: 17.5
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025771, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_LocalPosition.y
