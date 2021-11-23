@@ -173,8 +173,9 @@ MonoBehaviour:
   Heart_drop: 0
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
   PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
-  Player: {fileID: 0}
+  Player: {fileID: 9052505828961320089, guid: 01dd6790e7d66de4e95c5cbcd3afd041, type: 3}
   rb: {fileID: 7529662655861702280}
+  FloatingTexttPrefab: {fileID: 0}
   knockbackPower: 0.1
   knockbackDuration: 0.7
   knockbackResistance: 0

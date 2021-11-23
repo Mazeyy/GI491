@@ -33218,6 +33218,7 @@ MonoBehaviour:
   PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
   Player: {fileID: 433897334}
   rb: {fileID: 433897337}
+  FloatingTexttPrefab: {fileID: 0}
   knockbackPower: 0.0005
   knockbackDuration: 1.1
   knockbackResistance: 0
@@ -37235,41 +37236,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
---- !u!1 &530724417 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
-  m_PrefabInstance: {fileID: 911911297}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &530724418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530724417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75d66449dcd43fd49be8c1df43fc4a72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FloatingTextPrefab: {fileID: 1156320806526377658, guid: 0e446e83ea7098d479aff322e73bcd26, type: 3}
-  movementSpeed: 1
-  movement_base_speed: 1
-  Range: 7
-  isMoving: 0
-  rb: {fileID: 530724423}
-  Animator: {fileID: 530724422}
-  Player: {fileID: 433897339}
---- !u!95 &530724422 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1993388955390538809, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
-  m_PrefabInstance: {fileID: 911911297}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &530724423 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1993388955390538808, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
-  m_PrefabInstance: {fileID: 911911297}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &530724426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1993388955390538788, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
@@ -40898,7 +40864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538788, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06
+      value: 0.43750006
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538788, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40938,16 +40904,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538791, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538809, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1993388955390538813, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
+      propertyPath: FloatingTexttPrefab
+      value: 
+      objectReference: {fileID: 9052505828961320089, guid: 01dd6790e7d66de4e95c5cbcd3afd041, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
 --- !u!4 &920519151 stripped
@@ -60428,7 +60398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025765, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3729831005973025765, guid: 8cbaf87774794c340a2a0d019853e114, type: 3}
       propertyPath: m_TagString
@@ -60788,7 +60758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7529662655861702272, guid: 0ad87f3b04aea0e4ab72368c96509a07, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7529662655861702272, guid: 0ad87f3b04aea0e4ab72368c96509a07, type: 3}
       propertyPath: m_TagString

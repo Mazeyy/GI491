@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAggro1 : MonoBehaviour
 {
-    public GameObject FloatingTextPrefab;
+    //public GameObject FloatingTextPrefab;
     public float movementSpeed = 1.0f;
     public float movement_base_speed = 1.0f;
     public float Range = 5F;
@@ -29,10 +29,10 @@ public class EnemyAggro1 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
-        if (PlayerPos = GameObject.FindGameObjectWithTag("Player").transform)
-        {
-            ShowFloatingText();
-        }
+        //if (PlayerPos = GameObject.FindGameObjectWithTag("Player").transform)
+        //{
+        //    ShowFloatingText();
+        //}
     }
 
     void Update()
@@ -48,10 +48,10 @@ public class EnemyAggro1 : MonoBehaviour
 
     }   
 
-    void ShowFloatingText()
-    {
-        Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
-    }
+    //void ShowFloatingText()
+    //{
+    //    Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+    //}
 
     void FollowPlayer()
     {

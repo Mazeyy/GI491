@@ -21,6 +21,8 @@ public class Enemy_Stats : MonoBehaviour
     public Rigidbody2D rb;
     //public float health;
 
+    public GameObject FloatingTexttPrefab;
+
     public float knockbackPower = 0.1f;
     public float knockbackDuration = 0.7f;
     public float knockbackResistance = 0f;
@@ -59,7 +61,11 @@ public class Enemy_Stats : MonoBehaviour
     public void DealDMG(float damage)
     {
         Health -= damage;
-        print("Damage Taken");           
+        print("Damage Taken");   
+        if(FloatingTexttPrefab && Health > 0)
+        {
+            ShowFloatingTextt();
+        }
         CheckDeath();        
 
     }    
@@ -140,4 +146,10 @@ public class Enemy_Stats : MonoBehaviour
             print("heal");
         }
     }*/
+
+    void ShowFloatingTextt()
+    {
+        var go = Instantiate(FloatingTexttPrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = Health.ToString();
+    }
 }

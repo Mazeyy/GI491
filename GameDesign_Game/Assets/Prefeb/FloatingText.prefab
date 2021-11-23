@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7789228046552229555}
   - component: {fileID: 6170169556795481221}
   - component: {fileID: 8622035164039289845}
-  - component: {fileID: 2043880620953183718}
+  - component: {fileID: -6723806000953685879}
   m_Layer: 0
   m_Name: FloatingText
   m_TagString: Untagged
@@ -97,15 +97,22 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &2043880620953183718
-MonoBehaviour:
+--- !u!95 &-6723806000953685879
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156320806526377658}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46cb7470359d7764f87822f55633c6a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0de25fde8455db42800e9ef1b1bd41c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
