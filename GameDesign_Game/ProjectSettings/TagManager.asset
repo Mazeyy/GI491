@@ -9,6 +9,7 @@ TagManager:
   - Weapon
   - Boss
   - EnemyShoot
+  - SlimeHeal
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,7 @@ public class Enemy_Stats : MonoBehaviour
 {
     [Space]
     [Header("Stat :")]
+    
     public float MaxHealt = 1.0f;
     public float Health = 1.0f;
     public float AttackDMG = 10f;
@@ -15,6 +16,8 @@ public class Enemy_Stats : MonoBehaviour
     public GameObject PotionPrefab;
     public GameObject Player;
     private Transform PlayerPos;
+
+    private bool healing = false;
     //private float HealCooldown;
     public static Enemy_Stats EnemyStats;
 
@@ -28,10 +31,12 @@ public class Enemy_Stats : MonoBehaviour
     public float knockbackResistance = 0f;
     private float knockCooldown;
     public float StartknockCooldown = 1;
+    public GameObject healVFX;
 
     private Animator anim;
 
     private int randDrop;
+    public float healAmount;
    
     private void Start()
     {
@@ -41,8 +46,33 @@ public class Enemy_Stats : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }
+    
+
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == ("SlimeHeal"))
+        {
+            healing = false;
+        }
+    }
+    
     private void Update()
     {
+        if (Health > MaxHealt)
+        {
+            Health = MaxHealt;
+        }
+            if (healing == true)
+        {
+            healVFX.SetActive(true);
+            Health += healAmount * Time.deltaTime;
+        }
+        else
+        {
+            healVFX.SetActive(false);
+        }
+
         //PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
         
         //filp character with code
@@ -74,6 +104,11 @@ public class Enemy_Stats : MonoBehaviour
         if (other.tag == "Player")
         {
             StartCoroutine(Player_Controller.instance.Knockback(knockbackDuration, knockbackPower, this.transform));            
+        }
+        
+        if (other.tag == ("SlimeHeal"))
+        {
+            healing = true;
         }
 
         if (other.tag == ("Weapon"))

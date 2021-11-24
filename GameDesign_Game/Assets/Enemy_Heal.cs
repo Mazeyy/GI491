@@ -28,15 +28,14 @@ public class Enemy_Heal : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
     }
-
+    
 
     //Heal Zone
-    /*private void OnTriggerEnter2D(Collider2D col) 
+    /*  private void OnTriggerEnter2D(Collider2D col) 
     {
         if (col.gameObject.name.Equals("Enemy") && Enemy_Stats.EnemyStats.Health < 20)
             StartCoroutine ("Heal");
     }
-
     private void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.name.Equals("Enemy"))
@@ -51,9 +50,9 @@ public class Enemy_Heal : MonoBehaviour
             yield return new WaitForSeconds (Time.deltaTime);
         }
         Enemy_Stats.EnemyStats.Health = 30f;
-    }*/
+    }
 
-    /*IEnumerable Heal() //Heal every seconds
+    IEnumerable HealCD() //Heal every seconds
     {
         HealCooldown = 0.2f;
         yield return new WaitForSeconds(HealCooldown);
