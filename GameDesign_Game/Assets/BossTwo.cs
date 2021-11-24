@@ -27,6 +27,9 @@ public class BossTwo : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    public GameObject dmg_right;
+    public GameObject dmg_dash;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,18 +85,35 @@ public class BossTwo : MonoBehaviour
 
 
     //Event Attack
-    /*public void Attack()
+    public void Attack()
     {
-        Vector3 pos = transform.position;
+        /*Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
 
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        Debug.Log("got damage");
         if (colInfo != null)
         {
-            colInfo.GetComponent<Player_Stats>().Health(attackDamage);
-        }
-    }*/
+            colInfo.GetComponent<Player_Stats>().DealDMG(attackDamage);
+            Debug.Log("take damage");
+        }*/
+        Debug.Log("Open Area attack");
+        dmg_right.SetActive(true);
+    }
+
+    public void DashAttack()
+    {
+        dmg_dash.SetActive(true);
+    }
+    public void DisableDashAttack()
+    {
+        dmg_dash.SetActive(false) ;
+    }
+    public void DisableAttack()
+    {
+        dmg_right.SetActive(false);
+    }
 
     //IsCharge
     //public void TakeDamage(float damage)

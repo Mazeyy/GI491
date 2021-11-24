@@ -95,30 +95,10 @@ public class Boss : MonoBehaviour
             if (StartSummon == true)
             {
                 SpawnObjectAtRandom();
-                
             }
         }
         HealthBar.value = Health;
     }
-
-    /*public void LookAtPlayer()
-    {
-        Vector3 flipped = transform.localScale;
-        flipped.z *= -1f;
-
-        if (transform.position.x > PlayerPos.position.x && isFlipped)
-        {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
-            isFlipped = false;
-        }
-        else if (transform.position.x < PlayerPos.position.x && !isFlipped)
-        {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
-            isFlipped = true;
-        }
-    }*/
 
     public void Attack()
     {
@@ -167,7 +147,9 @@ public class Boss : MonoBehaviour
     {
         if (currentTimeToSpawn <= 0)
         {
-            Vector2 randomPos = Random.insideUnitCircle * spawnRadius;
+            Vector2 playerPos = Player.transform.position;
+            Vector2 randomPos = playerPos + Random.insideUnitCircle * spawnRadius;
+            //Instantiate(ThronPrefab, randomPos, Quaternion.identity);
             Instantiate(ThronPrefab, randomPos, Quaternion.identity);
             currentTimeToSpawn = TimeToSpawn;
         }

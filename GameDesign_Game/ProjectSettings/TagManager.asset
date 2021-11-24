@@ -8,14 +8,15 @@ TagManager:
   - Wall
   - Weapon
   - Boss
+  - EnemyShoot
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Boss
   - 
   - 
   - 

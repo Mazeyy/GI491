@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1993388955390538810}
   - component: {fileID: 1993388955390538813}
   - component: {fileID: 5481394569806523285}
+  - component: {fileID: 8969952548594113049}
+  - component: {fileID: 3236292562245347785}
   m_Layer: 3
   m_Name: Slime
   m_TagString: Enemy
@@ -213,3 +215,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   destroyAfhit: 0
+--- !u!114 &8969952548594113049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993388955390538789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b035b64b9981d43ab309c3d417a02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 4adc673b4bded984d8111ccfcf08bffe, type: 2}
+  duration: 0.125
+--- !u!114 &3236292562245347785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993388955390538789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b5200090e827744b6fe120c567d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 8969952548594113049}

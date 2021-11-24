@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7422406508654818267}
   - component: {fileID: 7422406508654818266}
   - component: {fileID: 7422406508654818265}
+  - component: {fileID: 4066240234499659742}
   m_Layer: 0
-  m_Name: range_tree 1
-  m_TagString: Untagged
+  m_Name: range_tree
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +48,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -201,3 +203,22 @@ MonoBehaviour:
   attackRate: 0
   canShoot: 1
   howClose: 10
+  FloatingTexttPrefab: {fileID: 0}
+  MaxHealth: 50
+  Health: 50
+  HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
+  PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
+--- !u!114 &4066240234499659742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422406508654818264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848904210a7fbd54288b5d603de073d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  destroyAfhit: 0

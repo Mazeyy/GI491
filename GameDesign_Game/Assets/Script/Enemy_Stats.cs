@@ -67,7 +67,6 @@ public class Enemy_Stats : MonoBehaviour
             ShowFloatingTextt();
         }
         CheckDeath();        
-
     }    
 
     private void OnTriggerEnter2D(Collider2D other)

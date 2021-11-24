@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_Shoot : MonoBehaviour
-{    
+{
+    public static Enemy_Shoot EnemyShoot;
+
     public float Range = 5F;
     public bool isMoving;
     private float movementSpeed;
@@ -31,7 +34,18 @@ public class Enemy_Shoot : MonoBehaviour
     public float howClose;
 
     public static Enemy_Shoot thisenemy;
+    public GameObject FloatingTexttPrefab;
 
+    public float MaxHealth;
+    public float Health;
+    public GameObject HeartPrefab;
+    public GameObject PotionPrefab;
+    private int randDrop;
+
+    private void Start()
+    {
+        Health = MaxHealth;
+    }
 
     private void Awake()
     {
@@ -54,6 +68,11 @@ public class Enemy_Shoot : MonoBehaviour
             dist = Vector2.Distance(PlayerPos.position, transform.position);
         }
 
+        if (dist < howClose && canShoot == true)
+        {
+            StartCoroutine(Shoot());
+        }
+
     }
 
     void Slime_Movement_type()
@@ -63,8 +82,15 @@ public class Enemy_Shoot : MonoBehaviour
 
     public void Attack()
     {
-        if (dist < howClose && canShoot == true)
+       /* if (dist < howClose && canShoot == true)
         {
+            Debug.Log("sss");
+            StartCoroutine(Shoot());
+
+        }*/
+        if (dist < howClose)
+        {
+            Debug.Log("sss");
             StartCoroutine(Shoot());
 
         }
@@ -94,7 +120,7 @@ public class Enemy_Shoot : MonoBehaviour
 
     public IEnumerator Shoot()
     {
-
+       
         Animator.SetTrigger("Shoot");
         yield return new WaitForSeconds(0.2f);
         if (nextFire < Time.time)
@@ -103,6 +129,53 @@ public class Enemy_Shoot : MonoBehaviour
             nextFire = Time.time + fireRate;
         }
         canShoot = true;
+
+    }
+
+    public void DealDMG(float damage)
+    {
+        Health -= damage;
+        print("Damage Taken Shoot");
+        if (FloatingTexttPrefab && Health > 0)
+        {
+            ShowFloatingTextt();
+        }
+        CheckDeath();
+    }
+
+    void CheckDeath()
+    {
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+            ItemDrop();
+        }
+    }
+
+    void ShowFloatingTextt()
+    {
+        var go = Instantiate(FloatingTexttPrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = Health.ToString();
+    }
+
+    void ItemDrop()
+    {
+        randDrop = Random.Range(1, 10);
+        if (randDrop == 5)
+        {
+            Vector2 position = transform.position;
+            GameObject Heart = Instantiate(HeartPrefab, position, Quaternion.identity);
+            //GameObject Heart = Instantiate(HeartPrefab);
+            //Heart.SetActive(true);
+            Destroy(Heart, 5.0f);
+        }
+
+        if (randDrop == 2)
+        {
+            Vector2 position = transform.position;
+            GameObject Potion = Instantiate(PotionPrefab, position, Quaternion.identity);
+            Destroy(Potion, 5.0f);
+        }
 
     }
 }

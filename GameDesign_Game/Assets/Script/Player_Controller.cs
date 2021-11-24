@@ -143,7 +143,7 @@ public class Player_Controller : MonoBehaviour
 
                 //rb.AddForce(CombatDirection * SlideAttack);   //player slide while attack
 
-                Animator.SetTrigger("Attack");                
+                Animator.SetTrigger("Attack");
                 //Collider2D[] hitenemies = Physics2D.OverlapCircleAll(Attackpoint.position, attackRange, whatIsEnemies);
 
                 //for (int i = 0; i < hitenemies.Length; i++)
