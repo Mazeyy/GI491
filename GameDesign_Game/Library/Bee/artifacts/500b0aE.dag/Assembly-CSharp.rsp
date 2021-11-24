@@ -331,6 +331,7 @@
 "Assets/Healing.cs"
 "Assets/IdleRangeBehavior.cs"
 "Assets/Mainmenu.cs"
+"Assets/PauseMenu.cs"
 "Assets/Script/AttackState.cs"
 "Assets/Script/Attack_box.cs"
 "Assets/Script/Behaviour/IdleBehaviour.cs"
