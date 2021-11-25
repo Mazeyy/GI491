@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1008657985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008657986}
+  - component: {fileID: 1008657987}
+  - component: {fileID: 1008657988}
+  m_Layer: 0
+  m_Name: HealingZone
+  m_TagString: SlimeHeal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008657986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008657985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.1995, y: 3.1995, z: 3.1995}
+  m_Children: []
+  m_Father: {fileID: 8047018525397674844}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008657987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008657985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0f13d9e896572429126f5f25c9bdcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 30
+  currentHealth: 0
+--- !u!58 &1008657988
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008657985}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0028081154, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1542677
 --- !u!1 &8047018525397674833
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,9 +73,16 @@ GameObject:
   - component: {fileID: 8047018525397674844}
   - component: {fileID: 8047018525397674835}
   - component: {fileID: 8047018525397674834}
+  - component: {fileID: 104133403}
+  - component: {fileID: 104133402}
+  - component: {fileID: 104133401}
+  - component: {fileID: 104133404}
+  - component: {fileID: 9055807562536399806}
+  - component: {fileID: 2510218133455117211}
+  - component: {fileID: 4688924252840793437}
   m_Layer: 0
   m_Name: heal spirit sheet_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +97,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.773387, y: 2.731441, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1008657986}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103,3 +173,137 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &104133403
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &104133402
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0052592754, y: 0.2012127}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 0.9375, y: 1.25}
+    newSize: {x: 0.9375, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.61141944, y: 0.39507675}
+  m_EdgeRadius: 0
+--- !u!114 &104133401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ecd034643e27045968c5f61c4fc1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  movement_base_speed: 1
+  Range: 5
+  isMoving: 0
+  rb: {fileID: 104133403}
+  Animator: {fileID: 8047018525397674834}
+  Player: {fileID: 0}
+--- !u!114 &104133404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7431dc2d8d6a8c84e80b7ee167c1064c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealt: 50
+  Health: 1
+  AttackDMG: 0
+  Heart_drop: 1
+  HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
+  PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
+  Player: {fileID: 0}
+  rb: {fileID: 0}
+  FloatingTexttPrefab: {fileID: 9052505828961320089, guid: 01dd6790e7d66de4e95c5cbcd3afd041, type: 3}
+  knockbackPower: 0.0005
+  knockbackDuration: 1.1
+  knockbackResistance: 0
+  StartknockCooldown: 1
+  healVFX: {fileID: 0}
+  healAmount: 0
+--- !u!114 &9055807562536399806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848904210a7fbd54288b5d603de073d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  destroyAfhit: 0
+--- !u!114 &2510218133455117211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b035b64b9981d43ab309c3d417a02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 4adc673b4bded984d8111ccfcf08bffe, type: 2}
+  duration: 0.125
+--- !u!114 &4688924252840793437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8047018525397674833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b5200090e827744b6fe120c567d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 2510218133455117211}

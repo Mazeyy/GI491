@@ -74,18 +74,6 @@ public class Enemy_Stats : MonoBehaviour
         }
 
         //PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
-        
-        //filp character with code
-        /*Vector3 characterScale = transform.localScale;
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            characterScale.x = -10;
-        }
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            characterScale.x = 10;
-        }
-        transform.localScale = characterScale;*/
     }
 
     public void DealDMG(float damage)
@@ -159,27 +147,6 @@ public class Enemy_Stats : MonoBehaviour
         }
 
     }
-
-
-    /*void Heal()
-    {
-        if (Health <= 20)
-        {
-            Health += 5;
-        }
-    }*/
-
-    /*IEnumerable Heal() //Heal every seconds
-    {
-        if (Health <= 20)
-        {
-            Health += 10;
-            HealCooldown = 0.2f;
-            yield return new WaitForSeconds(HealCooldown);
-            HealCooldown = 0;
-            print("heal");
-        }
-    }*/
 
     void ShowFloatingTextt()
     {
