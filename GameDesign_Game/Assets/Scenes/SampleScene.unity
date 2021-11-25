@@ -34816,7 +34816,7 @@ GameObject:
   - component: {fileID: 229242232}
   - component: {fileID: 229242231}
   - component: {fileID: 229242230}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41550,6 +41550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1917754077, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538788, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -41597,6 +41601,10 @@ PrefabInstance:
     - target: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993388955390538789, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1993388955390538791, guid: cb6d5becc71681c4dbc1b180eeab50eb, type: 3}
       propertyPath: m_Enabled
@@ -42252,7 +42260,7 @@ GameObject:
   - component: {fileID: 978060168}
   - component: {fileID: 978060171}
   - component: {fileID: 978060172}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Image
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -43602,6 +43610,10 @@ PrefabInstance:
       value: -0.37656188
       objectReference: {fileID: 0}
     - target: {fileID: 6565455373689999608, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565455373689999608, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -43623,11 +43635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6565455374485937256, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6565455374485937256, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1590765915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6565455374485937256, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_SpriteSortPoint
@@ -43712,6 +43724,10 @@ PrefabInstance:
     - target: {fileID: 6565455374485937260, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_Name
       value: Boss_Ent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565455374485937260, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6565455374485937260, guid: afdaa5c5888d69a40952d1ab651dba49, type: 3}
       propertyPath: m_IsActive
@@ -62629,7 +62645,7 @@ PrefabInstance:
       objectReference: {fileID: 1870561093}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: DashSpeed
-      value: 0.2
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: SlideAttack
@@ -62656,8 +62672,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: EnemyLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: movementBaseSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
+      propertyPath: PlayerLayer.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4091540236373401631, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
       propertyPath: startTimeBtwAttack

@@ -30,6 +30,8 @@ public class Player_Controller : MonoBehaviour
     public float Dashtime;
     public float timeBTWdash;
     public float StarttimeBTWdash;
+    public LayerMask PlayerLayer;
+    public LayerMask EnemyLayer;
 
     [Space]
     [Header("Melee")]
@@ -88,9 +90,9 @@ public class Player_Controller : MonoBehaviour
         {
             if (timeBTWdash <= 0)
             {
-                rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Impulse);
+                //rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Impulse);
                 StartCoroutine(Dashing());
-                Debug.Log("dash");
+               // Debug.Log("dash");
             }            
         }
         else
@@ -116,14 +118,34 @@ public class Player_Controller : MonoBehaviour
     } 
     private IEnumerator Dashing()
     {
+        //Debug.Log("dash");
+        //IsDashing = true;        
+        ////rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Force);        
+        //yield return new WaitForSeconds(0.2f);
+        ////timeBTWdash = Dashtime;
+        ////IsDashing = false;
+        //Physics2D.IgnoreLayerCollision(PlayerLayer, EnemyLayer, true);
+        ////rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Force);
+        //yield return new WaitForSeconds(0.2f);
+        //Physics2D.IgnoreLayerCollision(PlayerLayer, EnemyLayer, false);
         Debug.Log("dash");
-        IsDashing = true;        
-        rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Force);        
+        IsDashing = true;
+        movementBaseSpeed = DashSpeed ;
+        //Physics2D.IgnoreLayerCollision(PlayerLayer, EnemyLayer, true);
+        //rb.AddForce(movementDirection * DashSpeed , ForceMode2D.Force);
         yield return new WaitForSeconds(0.2f);
+        Physics2D.IgnoreLayerCollision(PlayerLayer, EnemyLayer, false);
+        movementBaseSpeed = 5f;
         timeBTWdash = Dashtime;
         IsDashing = false;
-        
-    }    
+    }
+    void ignoreCollision()
+    {
+        if (IsDashing == true)
+        {
+            Physics2D.IgnoreLayerCollision(PlayerLayer, EnemyLayer, true);
+        }
+    }
 
     void Attack()
     {       
