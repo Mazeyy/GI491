@@ -42,6 +42,8 @@ public class Enemy_Shoot : MonoBehaviour
     public GameObject PotionPrefab;
     private int randDrop;
 
+    public GameObject Tutorial;
+
     private void Start()
     {
         Health = MaxHealth;
@@ -72,6 +74,7 @@ public class Enemy_Shoot : MonoBehaviour
         {
             StartCoroutine(Shoot());
         }
+        Tutorial.SetActive(true);
 
     }
 
@@ -178,4 +181,5 @@ public class Enemy_Shoot : MonoBehaviour
         }
 
     }
+    
 }

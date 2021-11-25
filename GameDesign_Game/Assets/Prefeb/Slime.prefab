@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1993388955390538788}
+  - component: {fileID: 6235943346813476863}
   - component: {fileID: 1993388955390538790}
   - component: {fileID: 1993388955390538791}
   - component: {fileID: 1993388955390538808}
@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5481394569806523285}
   - component: {fileID: 8969952548594113049}
   - component: {fileID: 3236292562245347785}
+  - component: {fileID: 6840510865598886248}
   m_Layer: 3
   m_Name: Slime
   m_TagString: Enemy
@@ -25,21 +26,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1993388955390538788
-Transform:
+--- !u!224 &6235943346813476863
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993388955390538789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.168, y: -0.199, z: 20.391987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20.391987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1917754078}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.39, y: 0.43750006}
+  m_SizeDelta: {x: 1.3125, y: 1.875}
+  m_Pivot: {x: 0.5, y: 0.2}
 --- !u!212 &1993388955390538790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -196,7 +202,6 @@ MonoBehaviour:
   HeartPrefab: {fileID: 3673400298086213396, guid: d2e3097ea5aa50e4389826e3d5fef392, type: 3}
   PotionPrefab: {fileID: 4826770672923025789, guid: 679c8e0b1bc4f83488305ad07c9db3c0, type: 3}
   Player: {fileID: 4091540236373401616, guid: a6ece6efbbcc93f44beea95b04f90b3e, type: 3}
-  healing: 0
   rb: {fileID: 1993388955390538808}
   FloatingTexttPrefab: {fileID: 9052505828961320089, guid: 01dd6790e7d66de4e95c5cbcd3afd041, type: 3}
   knockbackPower: 0.0005
@@ -246,12 +251,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashEffect: {fileID: 8969952548594113049}
+--- !u!222 &6840510865598886248
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993388955390538789}
+  m_CullTransparentMesh: 1
 --- !u!1001 &8279214920249496166
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1993388955390538788}
+    m_TransformParent: {fileID: 6235943346813476863}
     m_Modifications:
     - target: {fileID: 8279214919482296504, guid: 82bc0dec149f6a947973a7c25e479392, type: 3}
       propertyPath: m_RootOrder
